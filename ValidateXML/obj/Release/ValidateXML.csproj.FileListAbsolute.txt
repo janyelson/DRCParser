@@ -1,0 +1,6 @@
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\bin\Release\ValidateXML.exe.config
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\bin\Release\ValidateXML.exe
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\bin\Release\ValidateXML.pdb
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\obj\Release\ValidateXML.csproj.CoreCompileInputs.cache
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\obj\Release\ValidateXML.exe
+C:\Users\janye\source\repos\ValidateXML\ValidateXML\obj\Release\ValidateXML.pdb

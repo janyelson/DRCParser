@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ficha>	
+	<Dados_da_ficha>
+		<Paciente>
+			<Dados_do_paciente>
+				<data> <Any_event_as_Point_Event>				
+					<time>"2018-10-06"</time>
+					<data> 
+						<Gênero> 
+							<value> <code_string> FASFASDASDA </code_string> </value> 
+						</Gênero>	
+
+						<Raça> 
+							<value> <code_string> Pardo </code_string> </value>		
+						</Raça>
+							
+						<Idade>
+							<value> <magnitude> 70 </magnitude> </value>
+						</Idade>		
+					</data>
+				</Any_event_as_Point_Event> </data>	
+			</Dados_do_paciente>
+		</Paciente>
+
+		<Alteracao_de_imagem> <!-- Nao obrigatoria -->
+			<Alteracao_da_imagem>
+				<data> <Any_event_as_Point_Event>		
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> <!-- Obrigatório --> 
+						<Alteração_na_imagem> 
+							<value> true </value>			
+						</Alteração_na_imagem>
+							
+						<Exame> <!-- 0 ou varias -->
+							<value> "Exame de urina"</value>					
+						</Exame>
+					</data>
+				</Any_event_as_Point_Event> </data>	
+			</Alteracao_da_imagem>
+		</Alteracao_de_imagem>
+
+		<Exames>
+			<RAC> <!-- Nao obrigatorio -->
+				<data> <Any_event_as_Point_Event>					
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> <!-- Obrigatório --> 
+						<Relação_albinuria_creatinuria> <!-- Nao obrigatorio -->
+							<value> <magnitude> 2 </magnitude> </value>
+						</Relação_albinuria_creatinuria>
+					</data>
+				</Any_event_as_Point_Event> </data>
+			</RAC>
+
+			<TFG> <!-- Nao obrigatorio -->
+				<data> <Any_event_as_Point_Event>			
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data>  
+						<TFG> 
+							<value> <magnitude> 50.3 <!--double em ml/min/1.73m2--> </magnitude></value>
+						</TFG>
+							
+						<Categoria_TFG>
+							<value> <code_string> TFG3A<!-- TFG1, TFG2, TFG3A, TFG3B, TFG4 E TFG5 --></code_string></value>
+						</Categoria_TFG>
+					</data>
+				</Any_event_as_Point_Event></data>
+			</TFG>
+
+			<Cretinina_Serica> 
+				<data> <Any_event_as_Point_Event>
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> 
+						<Creatinina> <!-- obrigatorio -->
+							<value>
+								<magnitude> 17.31<!--double  "mg/dl" pattern (\+|\-)?(0|[1-9][0-9]*)?(\.[0-9]{2})?--> </magnitude>
+								<precision> 2 </precision>
+							</value>
+						</Creatinina>
+					</data>
+				</Any_event_as_Point_Event> </data>
+			</Cretinina_Serica>
+
+			<Nível_de_albuminuria> <!-- Nao obrigatorio -->
+				
+				<data> <Any_event_as_Point_Event>
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> <!-- Obrigatório --> 
+						<Nível_de_albumina> <!-- obrigatorio -->
+							<value>
+								<magnitude> 30<!--double "mg/24h"--> </magnitude>
+							</value>		
+						</Nível_de_albumina>
+
+						<Categoria> 
+							<value><code_string> A1 <!-- A1, A2, A3 --></code_string></value>
+						</Categoria>
+					</data>
+				</Any_event_as_Point_Event></data>
+			</Nível_de_albuminuria>
+
+			<EQU_EAS_Urinatipo1> <!-- Nao obrigatorio -->
+				<data> <Any_event_as_Point_Event>
+					<time>t"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> 
+						<Elementos_Anormais_do_Sedimento> 
+							<value> false<!--type="oe:DV_BOOLEAN"--> </value>
+						</Elementos_Anormais_do_Sedimento>
+							
+						<Características> <!-- Nao Obrigatorio, sem limite -->
+							<value> <!--type="oe:DV_TEXT"--> </value>
+						</Características>
+					</data>
+				</Any_event_as_Point_Event> </data>
+			</EQU_EAS_Urinatipo1>
+		</Exames>
+
+		<Fatores_de_risco> 
+			<Outros_problemas_do_paciente> 
+				<data> <Any_event_as_Point_Event>
+					<time>"2018-10-06"</time> <!-- Obrigatório --> 
+					<data> 
+						<Diabetes_Millitus>
+							<value> false<!-- type="oe:DV_BOOLEAN" --> </value>
+						</Diabetes_Millitus>
+							
+						<Doença_policistica_renal>
+							<value> false <!-- type="oe:DV_BOOLEAN" --></value>
+						</Doença_policistica_renal>
+							
+						<Litiase_Renal>
+							<value> false <!-- type="oe:DV_BOOLEAN" --></value>								
+						</Litiase_Renal>
+
+						<Infecção_urinária_recorrente> 
+							<value> false <!-- type="oe:DV_BOOLEAN" --> </value>
+						</Infecção_urinária_recorrente>
+					</data>
+				</Any_event_as_Point_Event> </data>	
+			</Outros_problemas_do_paciente>
+		</Fatores_de_risco>
+	</Dados_da_ficha>
+</Ficha>
