@@ -64,17 +64,46 @@ namespace ValidateXML
             this.idade = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Idade/" + value + "tp:magnitude", namespaceManager).Value;
 
             //Alteraçao de imagem
-            this.alteracaoNaImagem = doc.XPathSelectElement(path + "tp:Alteracao_de_imagem/tp:Alteracao_da_imagem/" + data + "tp:Alteração_na_imagem/" + value + "v1:value", namespaceManager).Value;
-            this.exame = doc.XPathSelectElement(path + "tp:Alteracao_de_imagem/tp:Alteracao_da_imagem/" + data + "tp:Exame/" + value + "v1:value", namespaceManager).Value;
+            try
+            { 
+                this.alteracaoNaImagem = doc.XPathSelectElement(path + "tp:Alteracao_de_imagem/tp:Alteracao_da_imagem/" + data + "tp:Alteração_na_imagem/" + value + "v1:value", namespaceManager).Value;
+            }
+            catch (NullReferenceException e) {
+                this.alteracaoNaImagem = null;
+            }
+
+            if (alteracaoNaImagem != null) {
+                try
+                {
+                    this.exame = doc.XPathSelectElement(path + "tp:Alteracao_de_imagem/tp:Alteracao_da_imagem/" + data + "tp:Exame/" + value + "v1:value", namespaceManager).Value;
+
+                }
+                catch (NullReferenceException e) {
+                    this.exame = "";
+                }
+            }
 
             //Exames
             //RAC
-            this.rac = doc.XPathSelectElement(path + "tp:Exames/tp:RAC/" + data + "tp:Relação_albuminuria_creatinuria/" + value + "tp:magnitude", namespaceManager).Value;
-
+            try
+            {
+                this.rac = doc.XPathSelectElement(path + "tp:Exames/tp:RAC/" + data + "tp:Relação_albuminuria_creatinuria/" + value + "tp:magnitude", namespaceManager).Value;
+            }
+            catch (NullReferenceException e) {
+                this.rac = null;
+            }
             //TFG
-            this.tfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:TFG/" + value + "tp:magnitude", namespaceManager).Value;
-            this.categoriaTfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:Categoria_TFG/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+            try
+            {
+                this.tfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:TFG/" + value + "tp:magnitude", namespaceManager).Value;
+                this.categoriaTfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:Categoria_TFG/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+            }
+            catch (NullReferenceException e) {
+                this.tfg = null;
+            }
 
+            if(tfg != null) this.categoriaTfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:Categoria_TFG/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+            
             //Creatinina
             this.creatinina = doc.XPathSelectElement(path + "tp:Exames/tp:Cretinina_Serica/" + data + "tp:Creatinina/" + value + "tp:magnitude", namespaceManager).Value;
 
@@ -83,15 +112,27 @@ namespace ValidateXML
             this.categoriaAlbumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Categoria/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
 
             //EQU EAS
-            this.equ = doc.XPathSelectElement(path + "tp:Exames/tp:EQU_EAS_Urinatipo1/" + data + "tp:Elementos_Anormais_do_Sedimento/" + value + "v1:value", namespaceManager).Value;
-            this.caracteristicasEqu = doc.XPathSelectElement(path + "tp:Exames/tp:EQU_EAS_Urinatipo1/" + data + "tp:Características/" + value + "v1:value", namespaceManager).Value;
+            try
+            {
+                this.equ = doc.XPathSelectElement(path + "tp:Exames/tp:EQU_EAS_Urinatipo1/" + data + "tp:Elementos_Anormais_do_Sedimento/" + value + "v1:value", namespaceManager).Value;
+            }
+            catch (NullReferenceException e) {
+
+            }
+
+            if(equ != null && equ == "true") this.caracteristicasEqu = doc.XPathSelectElement(path + "tp:Exames/tp:EQU_EAS_Urinatipo1/" + data + "tp:Características/" + value + "v1:value", namespaceManager).Value;
 
             //Fatores de Risco
-            this.diabete = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Diabetes_Mellitus/" + value + "v1:value", namespaceManager).Value;
-            this.policistica = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Doença_policistica_renal/" + value + "v1:value", namespaceManager).Value;
-            this.litiase = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Litiase_Renal/" + value + "v1:value", namespaceManager).Value;
-            this.infeccao = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Infecção_urinária_recorrente/" + value + "v1:value", namespaceManager).Value;
-
+            try
+            {
+                this.diabete = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Diabetes_Mellitus/" + value + "v1:value", namespaceManager).Value;
+                this.policistica = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Doença_policistica_renal/" + value + "v1:value", namespaceManager).Value;
+                this.litiase = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Litiase_Renal/" + value + "v1:value", namespaceManager).Value;
+                this.infeccao = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Infecção_urinária_recorrente/" + value + "v1:value", namespaceManager).Value;
+            } catch (NullReferenceException e)
+            {
+                this.diabete = this.policistica = this.litiase = this.infeccao = null;
+            }
             Print();
         }
 
@@ -154,7 +195,7 @@ namespace ValidateXML
                 new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), idade)));
 
             //Alteracao de imagem
-            if(alteracaoNaImagem == "true")
+            if(alteracaoNaImagem != null && alteracaoNaImagem == "true")
             { 
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#alteracao_de_imagem"))));
@@ -172,6 +213,20 @@ namespace ValidateXML
                 element.Add(new XElement(owl + "ClassAssertion",
                     new XElement(owl + "Class", new XAttribute("URI", "#RelacaoAlbuminaCreatinina")),
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#rac"))));
+            }
+
+            //TFG
+            if (tfg != null) {
+                
+                
+                element.Add(new XElement(owl + "Declaration",
+                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#tfg"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#" + getTFGClass())),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#tfg"))));
+                element.Add(new XElement(owl + "SameIndividual",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#" + getTFGIndividual())),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#tfg"))));
             }
 
             //Creatinina Serica
@@ -196,7 +251,7 @@ namespace ValidateXML
                 new XElement(owl + "Class", new XAttribute("URI", classA)),
                 new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
 
-            if (equ == "true")
+            if (equ != null && equ == "true")
             {
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#equ_eas"))));
@@ -205,7 +260,7 @@ namespace ValidateXML
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#equ_eas"))));
             }
 
-            if(diabete == "true")
+            if(diabete != null && diabete == "true")
             {
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#diabete"))));
@@ -214,7 +269,7 @@ namespace ValidateXML
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#diabete"))));
             }
 
-            if (litiase == "true")
+            if (litiase != null && litiase == "true")
             {
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#litiase"))));
@@ -223,7 +278,7 @@ namespace ValidateXML
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#litiase"))));
             }
 
-            if (policistica == "true")
+            if (policistica != null && policistica == "true")
             {
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#policistica"))));
@@ -232,7 +287,7 @@ namespace ValidateXML
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#policistica"))));
             }
 
-            if (infeccao == "true")
+            if (infeccao != null && infeccao == "true")
             {
                 element.Add(new XElement(owl + "Declaration",
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#infeccao"))));
@@ -244,6 +299,66 @@ namespace ValidateXML
             doc.Save("arquivos/Resultado.owl");
 
 
+        }
+
+        string getTFGClass() {
+
+            string tfgClass = "";
+            
+            switch (categoriaTfg)
+            {
+                case "at0013":
+                    tfgClass = "TFG1";
+                    break;
+                case "at0015":
+                    tfgClass = "TFG2";
+                    break;
+                case "at0025":
+                    tfgClass = "TFG3A";
+                    break;
+                case "at0026":
+                    tfgClass = "TFG3B";
+                    break;
+                case "at0027":
+                    tfgClass = "TFG4";
+                    break;
+                case "at0028":
+                    tfgClass = "TFG5";
+                    break;
+            }
+
+            return tfgClass;
+        }
+
+        string getTFGIndividual()
+        {
+
+            string tfgIndvidual = "";
+            switch (categoriaTfg)
+            {
+                case "at0013":
+                    tfgIndvidual = "TFGI1";
+                    break;
+                case "at0015":
+                    tfgIndvidual = "TFGI2";
+                    break;
+                case "at0025":
+                    tfgIndvidual = "TFGI3A";
+                    break;
+                case "at0026":
+                    tfgIndvidual = "TFGI3B";
+                    break;
+                case "at0027":
+                    tfgIndvidual = "TFGI4";
+                    break;
+                case "at0028":
+                    tfgIndvidual = "TFGI5";
+                    break;
+
+
+            }
+
+            return tfgIndvidual;
         }
 
         public void Print()
