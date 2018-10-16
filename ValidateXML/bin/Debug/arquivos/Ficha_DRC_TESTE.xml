@@ -289,6 +289,11 @@
 							
 							<value> <value xmlns="http://schemas.openehr.org/v1">false<!-- true ou false --></value> </value>
 						</Infecção_urinária_recorrente>
+						<Hipertensão_arterial_sistemática archetype_node_id="at0009" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Hipertensão arterial sistemática</value></name>  
+							
+							<value> <value xmlns="http://schemas.openehr.org/v1">false<!-- true ou false --></value> </value>
+						</Hipertensão_arterial_sistemática>
 					</data>
 				</Any_event_as_Point_Event> </data>	
 			</Outros_problemas_do_paciente>

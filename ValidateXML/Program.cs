@@ -7,6 +7,7 @@ namespace ValidateXML
 {
     class Program
     {
+        static Boolean hasError = false;
 
         static void Main(string[] args)
         {
@@ -17,7 +18,8 @@ namespace ValidateXML
                 return;
             }
 
-            try { 
+            try
+            {
                 XmlReaderSettings drcSettings = new XmlReaderSettings();
                 drcSettings.Schemas.Add("http://schemas.oceanehr.com/templates", "arquivos/FICHA_DRC.xsd");
                 drcSettings.Schemas.Add("http://schemas.openehr.org/v1", "arquivos/Structure.xsd");
@@ -32,8 +34,10 @@ namespace ValidateXML
 
                 while (drc.Read()) { }
 
-                XMLParser xml = new XMLParser(args[0]);
-                xml.Run();
+                if (!hasError) { 
+                    XMLParser xml = new XMLParser(args[0]);
+                    xml.Run();
+                }
 
             } catch(FileNotFoundException e) {
                 Console.WriteLine("Argumento para o arquivo xml não encontrado. " + e.Message);
@@ -45,7 +49,10 @@ namespace ValidateXML
             if (e.Severity == XmlSeverityType.Warning)
                 Console.WriteLine("Aviso:" + e.Message);
             else
+            {
                 Console.WriteLine("Erro [" + e.Exception.LineNumber + "]: " + e.Message);
+                hasError = true;
+            }
         }
     }
 }

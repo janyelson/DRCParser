@@ -1,158 +1,301 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Ficha>
-	<composer>type="oe:PARTY_PROXY"</composer> <!-- Obrigatório --> 
-	<context>
-		<start_time>type="oe:DV_DATE_TIME"</start_time> <!--Obrigatório --> 
-		<end_time>type="oe:DV_DATE_TIME"</end_time>
-		<location>type="xs:string"</location>
-		<setting>type="oe:DV_CODED_TEXT""</setting> <!--Obrigatório --> 
-		<health_care_facility>type="oe:PARTY_IDENTIFIED"</health_care_facility>
-		<participations>type="oe:PARTICIPATION"</participations>
-	</context>
+﻿<Ficha archetype_node_id="openEHR-EHR-COMPOSITION.ficha.v0" type="COMPOSITION" template_id="Ficha DRC" xmlns="http://schemas.oceanehr.com/templates">
 	
-	<Dados_da_ficha>
-		<Paciente>
-			<Dados_do_paciente>
-				<subject>type="oe:PARTY_SELF"</subject>	
-				<data> <Any_event_as_Point_Event>				
-					<time>type="oe:DV_DATE_TIME"</time>
-					<data> 
-						<Gênero> 
-							<value> <code_string> <!-- Masculino ou Feminino --></code_string> </value> 
+	<name> <value>Ficha</value> </name>
+	<language> 
+		<terminology_id> <value>ISO_639-1</value> </terminology_id> 
+		<code_string>pt</code_string>
+	</language>
+	<territory> 
+		<terminology_id> <value>ISO_3166-1</value> </terminology_id> 
+		<code_string>AU</code_string>
+	</territory>	
+	<category> <value>event</value>
+		<defining_code>
+			<terminology_id> <value>openehr</value> </terminology_id> 
+			<code_string>433</code_string>
+		</defining_code>
+	</category>
+	<composer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="p3:PARTY_IDENTIFIED" xmlns:p3="http://schemas.openehr.org/v1" />
+
+	<Dados_da_ficha archetype_node_id="openEHR-EHR-SECTION.dados_da_ficha.v0" type="SECTION"> 
+		<name> <value>Dados da ficha</value> </name>
+
+		<Paciente archetype_node_id="openEHR-EHR-SECTION.paciente.v0" type="SECTION">
+			<name> <value>Paciente</value> </name>
+
+			<Dados_do_paciente archetype_node_id="openEHR-EHR-OBSERVATION.dados_do_paciente.v0" type="OBSERVATION">
+				<name> <value>Dados do paciente</value> </name>
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id> <code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string> </encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">	
+					<name> <value>Any event</value> </name>	
+
+					<time><value xmlns="http://schemas.openehr.org/v1"><!-- YYYY-MM-DDTHH:MM:SSZ --> 2002-05-30T09:30:10Z</value></time>
+					<data archetype_node_id="at0003" type="ITEM_TREE"> 
+						<Gênero archetype_node_id="at0004" type="ELEMENT" valueType="DV_CODED_TEXT">
+							<name> <value>Gênero</value> </name> 
+
+							<value> 
+								<defining_code>
+									<terminology_id> <value>local</value> </terminology_id>
+									<code_string> <!-- Masculino (at0007) ou Feminino (at0008) --> </code_string> 
+								</defining_code>
+							</value> 
 						</Gênero>	
 
-						<Raça> 
-							<value> <code_string> <!-- Negro, Branco, Amarelo ou Pardo --></code_string> </value>		
+						<Raça archetype_node_id="at0005" type="ELEMENT" valueType="DV_CODED_TEXT"> 
+							<name> <value>Raça</value> </name> 
+
+							<value> 
+								<defining_code>
+									<terminology_id> <value>local</value> </terminology_id>
+									<code_string> <!-- Negro (at0009), Branco (at0010), Amarelo (at0011) ou Pardo (at0012) --></code_string> 
+								</defining_code>
+							</value>		
 						</Raça>
 							
-						<Idade>
-							<value> <magnitude> <!-- Inteiro de 0 á 120 --> </magnitude> </value>
+						<Idade archetype_node_id="at0006" type="ELEMENT" valueType="DV_COUNT">
+							<name> <value>Idade</value> </name> 
+
+							<value> <magnitude> <!-- Inteiro de 0 á 120 --></magnitude> </value>
 						</Idade>		
 					</data>
 				</Any_event_as_Point_Event> </data>	
 			</Dados_do_paciente>
 		</Paciente>
 
-		<Alteracao_de_imagem> <!-- Nao obrigatoria -->
-			<Alteracao_da_imagem>
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 
+		<Alteracao_de_imagem archetype_node_id="openEHR-EHR-SECTION.alteracao_de_imagem.v0" type="SECTION"> <!-- Nao obrigatoria -->
+			<name> <value>Alteração de imagem</value> </name>
 
-				<data> <Any_event_as_Point_Event>		
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> <!-- Obrigatório --> 
-						<Alteração_na_imagem> 
-							<value> <!-- Boolean --> </value>			
+			<Alteracao_da_imagem archetype_node_id="openEHR-EHR-OBSERVATION.alteracao_da_imagem.v0" type="OBSERVATION">
+				<name> <value>Alteração da imagem</value> </name>
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id> <code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string> </encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">
+					<name> <value>Any event</value> </name>
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>			
+					<data archetype_node_id="at0003" type="ITEM_TREE">
+						<Alteração_na_imagem archetype_node_id="at0004" type="ELEMENT" valueType="DV_BOOLEAN"> 
+							<name> <value>Alteração na imagem</value> </name> 
+
+							<value>
+								<value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value>
+							</value>			
 						</Alteração_na_imagem>
 							
-						<Exame> <!-- 0 ou varias -->
-							<value> <!-- texto --> </value>					
+						<Exame archetype_node_id="at0005" type="ELEMENT" valueType="DV_TEXT"> <!-- 0 ou varias -->
+							<name> <value>Exame</value> </name> 
+
+							<value>
+								<value xmlns="http://schemas.openehr.org/v1"><!-- Texto --></value>
+							</value>					
 						</Exame>
 					</data>
 				</Any_event_as_Point_Event> </data>	
 			</Alteracao_da_imagem>
 		</Alteracao_de_imagem>
 
-		<Exames>
-			<RAC> <!-- Nao obrigatorio -->
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				<data> <Any_event_as_Point_Event>					
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> <!-- Obrigatório --> 
-						<Relação_albinuria_creatinuria> <!-- Nao obrigatorio -->
-							<value> <magnitude> <!--double--> </magnitude> </value>
-						</Relação_albinuria_creatinuria>
+		<Exames archetype_node_id="openEHR-EHR-SECTION.exames.v0" type="SECTION">
+			<name><value>Exames</value></name>
+
+			<RAC archetype_node_id="openEHR-EHR-OBSERVATION.rac.v0" type="OBSERVATION"> <!-- Nao obrigatorio -->
+				<name> <value>RAC</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id><code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string></encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">	
+					<name> <value>Any event</value> </name>
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>			
+					<data archetype_node_id="at0003" type="ITEM_TREE"> <!-- Obrigatório --> 
+						<Relação_albuminuria_creatinuria archetype_node_id="at0004" type="ELEMENT" valueType="DV_QUANTITY"> <!-- Nao obrigatorio -->
+							<name> <value>Relação albuminúria creatinúria</value> </name>	
+							
+							<value>
+								<magnitude><!--double--></magnitude> 
+								<units>%</units>
+							</value>
+						</Relação_albuminuria_creatinuria>
 					</data>
 				</Any_event_as_Point_Event> </data>
 			</RAC>
 
-			<TFG> <!-- Nao obrigatorio -->
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				<data> <Any_event_as_Point_Event>			
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data>  
-						<TFG> 
-							<value> <magnitude> <!--double em ml/min/1.73m2--> </magnitude></value>
+			<TFG archetype_node_id="openEHR-EHR-OBSERVATION.tfg.v0" type="OBSERVATION">
+				<name><value>TFG</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id> <code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string> </encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">	
+					<name> <value>Any event</value> </name>	
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>	
+					<data archetype_node_id="at0003" type="ITEM_TREE">  
+						<TFG archetype_node_id="at0030" type="ELEMENT" valueType="DV_QUANTITY"> 
+							<name> <value>TFG</value> </name>
+
+							<value> 
+								<magnitude><!--double em ml/min/1.73m2--></magnitude>
+								<units>ml/min/1.73m2</units>
+							</value>
 						</TFG>
 							
-						<Categoria_TFG>
-							<value> <code_string> <!-- TFG1, TFG2, TFG3A, TFG3B, TFG4 E TFG5 --></code_string></value>
+						<Categoria_TFG archetype_node_id="at0012" type="ELEMENT" valueType="DV_CODED_TEXT">
+							<name> <value>Categoria_TFG</value> </name>
+
+							<value> 
+								<defining_code> 
+									<terminology_id> <value>local</value> </terminology_id>
+									<code_string>
+										<!-- TFG1 (at0013), TFG2 (at0015), TFG3A (at0025), TFG3B (at0026), TFG4 (at0027) ou TFG5 (at0028) -->
+									</code_string>
+								</defining_code>
+							</value>
 						</Categoria_TFG>
 					</data>
 				</Any_event_as_Point_Event></data>
 			</TFG>
 
-			<Cretinina_Serica> <!-- Nao obrigatorio -->
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				<data> <Any_event_as_Point_Event>
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> 
-						<Creatinina> <!-- obrigatorio -->
+			<Cretinina_Serica archetype_node_id="openEHR-EHR-OBSERVATION.cretinina_serica.v0" type="OBSERVATION"> 
+				<name><value>Creatinina Serica</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id><code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string></encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">
+					<name><value>Any event</value></name>
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>
+					<data archetype_node_id="at0003" type="ITEM_TREE"> 
+						<Creatinina archetype_node_id="at0005" type="ELEMENT" valueType="DV_QUANTITY"> <!-- obrigatorio -->
+							<name> <value>Creatinina</value> </name>
+
 							<value>
-								<magnitude> <!--double  "mg/dl" pattern (\+|\-)?(0|[1-9][0-9]*)?(\.[0-9]{2})?--> </magnitude>
-								<precision> 2 </precision>
+								<magnitude><!--double  "mg/dl" pattern (\+|\-)?(0|[1-9][0-9]*)?(\.[0-9]{2})?--></magnitude>
+								<precision>2</precision>
+								<units>mg/dl</units>
 							</value>
 						</Creatinina>
 					</data>
 				</Any_event_as_Point_Event> </data>
 			</Cretinina_Serica>
 
-			<Nível_de_albuminuria> <!-- Nao obrigatorio -->
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				
-				<data> <Any_event_as_Point_Event>
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> <!-- Obrigatório --> 
-						<Nível_de_albumina> <!-- obrigatorio -->
+			<Nível_de_albuminuria archetype_node_id="openEHR-EHR-OBSERVATION.nivel_de_albuminuria.v0" type="OBSERVATION"> <!-- Nao obrigatorio -->
+				<name><value>Nível de albuminuria</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id><code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string></encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">
+					<name><value>Any event</value></name>
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>
+					<data archetype_node_id="at0003" type="ITEM_TREE"> <!-- Obrigatório --> 
+						<Nível_de_albumina archetype_node_id="at0004" type="ELEMENT" valueType="DV_QUANTITY"> <!-- obrigatorio -->
+							<name> <value>Nível de albumina</value> </name>
+
 							<value>
-								<magnitude> <!--double "mg/24h"--> </magnitude>
+								<magnitude><!--Double "mg/24h"--></magnitude>
+								<units>mg/24h</units>
 							</value>		
 						</Nível_de_albumina>
 
-						<Categoria> 
-							<value><code_string><!-- A1, A2, A3 --></code_string></value>
+						<Categoria archetype_node_id="at0005" type="ELEMENT" valueType="DV_CODED_TEXT">
+							<name> <value>Categoria</value> </name> 
+
+							<value> 
+								<defining_code> 
+									<terminology_id> <value>local</value> </terminology_id>
+									<code_string><!-- A1 (at0006), A2 (at0007) ou A3 (at0008)--></code_string>
+								</defining_code>
+							</value>
 						</Categoria>
 					</data>
 				</Any_event_as_Point_Event></data>
 			</Nível_de_albuminuria>
 
-			<EQU_EAS_Urinatipo1> <!-- Nao obrigatorio -->
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				<data> <Any_event_as_Point_Event>
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> 
-						<Elementos_Anormais_do_Sedimento> 
-							<value> <!--type="oe:DV_BOOLEAN"--> </value>
+			<EQU_EAS_Urinatipo1 archetype_node_id="openEHR-EHR-OBSERVATION.equ_eas_urinatipo1.v0" type="OBSERVATION"> <!-- Nao obrigatorio -->
+				<name><value>EQU EAS Urinatipo1</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id><code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string></encoding>
+				<subject></subject>
+
+				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">
+					<name><value>Any event</value></name>
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>
+					<data archetype_node_id="at0003" type="ITEM_TREE"> 
+						<Elementos_Anormais_do_Sedimento archetype_node_id="at0004" type="ELEMENT" valueType="DV_BOOLEAN"> 
+							<name><value>Elementos Anormais do Sedimento</value></name> 
+
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>
 						</Elementos_Anormais_do_Sedimento>
 							
 						<Características> <!-- Nao Obrigatorio, sem limite -->
-							<value> <!--type="oe:DV_TEXT"--> </value>
+							<name><value>Características</value></name>
+
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- Texto --></value> </value>
 						</Características>
 					</data>
 				</Any_event_as_Point_Event> </data>
 			</EQU_EAS_Urinatipo1>
 		</Exames>
 
-		<Fatores_de_risco> 
-			<Outros_problemas_do_paciente> 
-				<subject>type="oe:PARTY_SELF"</subject> <!-- Obrigatório --> 	
-				<data> <Any_event_as_Point_Event>
-					<time>type="oe:DV_DATE_TIME"</time> <!-- Obrigatório --> 
-					<data> 
-						<Diabetes_Millitus>
-							<value> <!-- type="oe:DV_BOOLEAN" --> </value>
-						</Diabetes_Millitus>
+		<Fatores_de_risco archetype_node_id="openEHR-EHR-SECTION.fatores_de_risco.v0" type="SECTION"> 
+			<name> <value>Fatores de risco</value> </name>
+			<Outros_problemas_do_paciente archetype_node_id="openEHR-EHR-OBSERVATION.outros_problemas_paciente.v0" type="OBSERVATION"> 
+				<name><value>Outros problemas do paciente</value></name> 
+
+				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id> <code_string>en</code_string> </language>
+				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string> </encoding>
+				<subject></subject>
+
+				<data> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">
+					<name><value>Any event</value></name> 
+
+					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>
+					<data archetype_node_id="at0003" type="ITEM_TREE"> 
+						<Diabetes_Mellitus archetype_node_id="at0004" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Diabetes Mellitus</value></name> 
+
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>
+						</Diabetes_Mellitus>
 							
-						<Doença_policistica_renal>
-							<value><!-- type="oe:DV_BOOLEAN" --></value>
+						<Doença_policistica_renal archetype_node_id="at0005" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Doença policistica renal</value></name> 
+
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>
 						</Doença_policistica_renal>
 							
-						<Litiase_Renal>
-							<value> <!-- type="oe:DV_BOOLEAN" --></value>								
+						<Litiase_Renal archetype_node_id="at0007" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Litiase Renal</value></name> 
+
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>								
 						</Litiase_Renal>
 
-						<Infecção_urinária_recorrente> 
-							<value> <!-- type="oe:DV_BOOLEAN" --> </value>
+						<Infecção_urinária_recorrente archetype_node_id="at0008" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Infecção urinária recorrente</value></name>  
+							
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>
 						</Infecção_urinária_recorrente>
+						<Hipertensão_arterial_sistemática archetype_node_id="at0009" type="ELEMENT" valueType="DV_BOOLEAN">
+							<name><value>Hipertensão arterial sistemática</value></name>  
+							
+							<value> <value xmlns="http://schemas.openehr.org/v1"><!-- true ou false --></value> </value>
+						</Hipertensão_arterial_sistemática>
 					</data>
 				</Any_event_as_Point_Event> </data>	
 			</Outros_problemas_do_paciente>

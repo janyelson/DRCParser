@@ -92,7 +92,7 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="Paciente" minOccurs="1" maxOccurs="1">
+                <xs:element name="Paciente" minOccurs="0" maxOccurs="1">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:element name="name">
@@ -104,7 +104,7 @@
                           </xs:sequence>
                         </xs:complexType>
                       </xs:element>
-                      <xs:element name="Dados_do_paciente" minOccurs="1">
+                      <xs:element name="Dados_do_paciente" minOccurs="0">
                         <xs:complexType>
                           <xs:sequence>
                             <xs:element name="name">
@@ -628,7 +628,7 @@
                           </xs:sequence>
                         </xs:complexType>
                       </xs:element>
-                      <xs:element name="Alteracao_da_imagem" minOccurs="1">
+                      <xs:element name="Alteracao_da_imagem" minOccurs="0">
                         <xs:complexType>
                           <xs:sequence>
                             <xs:element name="name">
@@ -836,7 +836,7 @@
                     <xs:attribute fixed="SECTION" name="type" />
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="Exames" minOccurs="1" maxOccurs="1">
+                <xs:element name="Exames" minOccurs="0" maxOccurs="1">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:element name="name">
@@ -921,7 +921,7 @@
                                                       <xs:element name="name">
                                                         <xs:complexType>
                                                           <xs:sequence>
-                                                            <xs:element name="value" type="xs:string" default="Relação albuminúria creatinuria" />
+                                                            <xs:element name="value" type="xs:string" default="Relação albinuria creatinuria" />
                                                             <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                                                             <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                                                           </xs:sequence>
@@ -998,7 +998,7 @@
                                           <xs:element name="data">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element name="Relação_albinuria_creatinuria" minOccurs="1">
+                                                <xs:element name="Relação_albuminuria_creatinuria" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -1418,7 +1418,7 @@
                           <xs:attribute fixed="OBSERVATION" name="type" />
                         </xs:complexType>
                       </xs:element>
-                      <xs:element name="Cretinina_Serica" minOccurs="1" maxOccurs="1">
+                      <xs:element name="Cretinina_Serica" minOccurs="0" maxOccurs="1">
                         <xs:complexType>
                           <xs:sequence>
                             <xs:element name="name">
@@ -1673,7 +1673,7 @@
                           <xs:attribute fixed="OBSERVATION" name="type" />
                         </xs:complexType>
                       </xs:element>
-                      <xs:element name="Nível_de_albuminuria" minOccurs="1" maxOccurs="1">
+                      <xs:element name="Nível_de_albuminuria" minOccurs="0" maxOccurs="1">
                         <xs:complexType>
                           <xs:sequence>
                             <xs:element name="name">
@@ -2293,13 +2293,13 @@
                                           <xs:element name="data">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element name="Diabetes_Mellitus" minOccurs="0">
+                                                <xs:element name="Diabetes_Mellitus" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
                                                         <xs:complexType>
                                                           <xs:sequence>
-                                                            <xs:element name="value" type="xs:string" default="Diabetes Mellitus" />
+                                                            <xs:element name="value" type="xs:string" default="Diabetes Millitus" />
                                                             <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                                                             <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                                                           </xs:sequence>
@@ -2315,7 +2315,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Doença_policistica_renal" minOccurs="0">
+                                                <xs:element name="Doença_policistica_renal" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2337,7 +2337,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Litiase_Renal" minOccurs="0">
+                                                <xs:element name="Litiase_Renal" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2359,7 +2359,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Infecção_urinária_recorrente" minOccurs="0">
+                                                <xs:element name="Infecção_urinária_recorrente" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2377,6 +2377,28 @@
                                                       </xs:choice>
                                                     </xs:sequence>
                                                     <xs:attribute fixed="at0008" name="archetype_node_id" type="oe:archetypeNodeId" />
+                                                    <xs:attribute fixed="ELEMENT" name="type" />
+                                                    <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element name="Hipertensão_arterial_sistemática" minOccurs="1">
+                                                  <xs:complexType>
+                                                    <xs:sequence>
+                                                      <xs:element name="name">
+                                                        <xs:complexType>
+                                                          <xs:sequence>
+                                                            <xs:element name="value" type="xs:string" default="Hipertensão arterial sistemática" />
+                                                            <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
+                                                            <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
+                                                          </xs:sequence>
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                      <xs:choice>
+                                                        <xs:element name="value" type="oe:DV_BOOLEAN" />
+                                                        <xs:element name="null_flavour" type="oe:DV_CODED_TEXT" />
+                                                      </xs:choice>
+                                                    </xs:sequence>
+                                                    <xs:attribute fixed="at0009" name="archetype_node_id" type="oe:archetypeNodeId" />
                                                     <xs:attribute fixed="ELEMENT" name="type" />
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
@@ -2409,13 +2431,13 @@
                                           <xs:element name="data">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element name="Diabetes_Mellitus" minOccurs="0">
+                                                <xs:element name="Diabetes_Mellitus" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
                                                         <xs:complexType>
                                                           <xs:sequence>
-                                                            <xs:element name="value" type="xs:string" default="Diabetes Mellitus" />
+                                                            <xs:element name="value" type="xs:string" default="Diabetes Millitus" />
                                                             <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                                                             <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                                                           </xs:sequence>
@@ -2431,7 +2453,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Doença_policistica_renal" minOccurs="0">
+                                                <xs:element name="Doença_policistica_renal" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2453,7 +2475,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Litiase_Renal" minOccurs="0">
+                                                <xs:element name="Litiase_Renal" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2475,7 +2497,7 @@
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>
                                                 </xs:element>
-                                                <xs:element name="Infecção_urinária_recorrente" minOccurs="0">
+                                                <xs:element name="Infecção_urinária_recorrente" minOccurs="1">
                                                   <xs:complexType>
                                                     <xs:sequence>
                                                       <xs:element name="name">
@@ -2493,6 +2515,28 @@
                                                       </xs:choice>
                                                     </xs:sequence>
                                                     <xs:attribute fixed="at0008" name="archetype_node_id" type="oe:archetypeNodeId" />
+                                                    <xs:attribute fixed="ELEMENT" name="type" />
+                                                    <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element name="Hipertensão_arterial_sistemática" minOccurs="1">
+                                                  <xs:complexType>
+                                                    <xs:sequence>
+                                                      <xs:element name="name">
+                                                        <xs:complexType>
+                                                          <xs:sequence>
+                                                            <xs:element name="value" type="xs:string" default="Hipertensão arterial sistemática" />
+                                                            <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
+                                                            <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
+                                                          </xs:sequence>
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                      <xs:choice>
+                                                        <xs:element name="value" type="oe:DV_BOOLEAN" />
+                                                        <xs:element name="null_flavour" type="oe:DV_CODED_TEXT" />
+                                                      </xs:choice>
+                                                    </xs:sequence>
+                                                    <xs:attribute fixed="at0009" name="archetype_node_id" type="oe:archetypeNodeId" />
                                                     <xs:attribute fixed="ELEMENT" name="type" />
                                                     <xs:attribute name="valueType" fixed="DV_BOOLEAN" />
                                                   </xs:complexType>

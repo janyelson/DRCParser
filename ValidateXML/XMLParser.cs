@@ -36,6 +36,7 @@ namespace ValidateXML
         string diabete;
         string litiase;
         string infeccao;
+        string hipertensao;
         string policistica;
 
         public XMLParser(string xmlPath)
@@ -59,9 +60,16 @@ namespace ValidateXML
             namespaceManager.AddNamespace("v1", "http://schemas.openehr.org/v1");
 
             //Dados do paciente
-            this.genero = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Gênero/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
-            this.raca = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Raça/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
-            this.idade = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Idade/" + value + "tp:magnitude", namespaceManager).Value;
+            try
+            {
+                this.genero = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Gênero/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+                this.raca = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Raça/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+                this.idade = doc.XPathSelectElement(path + "tp:Paciente/tp:Dados_do_paciente/" + data + "tp:Idade/" + value + "tp:magnitude", namespaceManager).Value;
+            }
+            catch (NullReferenceException e)
+            {
+                this.genero = this.raca = this.idade = null;
+            }
 
             //Alteraçao de imagem
             try
@@ -103,14 +111,27 @@ namespace ValidateXML
             }
 
             if(tfg != null) this.categoriaTfg = doc.XPathSelectElement(path + "tp:Exames/tp:TFG/" + data + "tp:Categoria_TFG/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
-            
+
             //Creatinina
-            this.creatinina = doc.XPathSelectElement(path + "tp:Exames/tp:Cretinina_Serica/" + data + "tp:Creatinina/" + value + "tp:magnitude", namespaceManager).Value;
+            try
+            {
+                this.creatinina = doc.XPathSelectElement(path + "tp:Exames/tp:Cretinina_Serica/" + data + "tp:Creatinina/" + value + "tp:magnitude", namespaceManager).Value;
+            }
+            catch (NullReferenceException e)
+            {
+
+            }
 
             //Nivel de albuminuria
-            this.albumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Nível_de_albumina/" + value + "tp:magnitude", namespaceManager).Value;
-            this.categoriaAlbumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Categoria/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+            try
+            {
+                this.albumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Nível_de_albumina/" + value + "tp:magnitude", namespaceManager).Value;
+                this.categoriaAlbumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Categoria/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+            }
+            catch (NullReferenceException e)
+            {
 
+            }
             //EQU EAS
             try
             {
@@ -129,10 +150,12 @@ namespace ValidateXML
                 this.policistica = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Doença_policistica_renal/" + value + "v1:value", namespaceManager).Value;
                 this.litiase = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Litiase_Renal/" + value + "v1:value", namespaceManager).Value;
                 this.infeccao = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Infecção_urinária_recorrente/" + value + "v1:value", namespaceManager).Value;
+                this.hipertensao = doc.XPathSelectElement(path + "tp:Fatores_de_risco/tp:Outros_problemas_do_paciente/" + data + "tp:Hipertensão_arterial_sistemática/" + value + "v1:value", namespaceManager).Value;
             } catch (NullReferenceException e)
             {
-                this.diabete = this.policistica = this.litiase = this.infeccao = null;
+                this.diabete = this.policistica = this.litiase = this.infeccao = this.hipertensao = null;
             }
+
             Print();
         }
 
@@ -294,6 +317,15 @@ namespace ValidateXML
                 element.Add(new XElement("ClassAssertion",
                     new XElement(owl + "Class", new XAttribute("URI", "#InfeccaoUrinariaRecorrente")),
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#infeccao"))));
+            }
+
+            if (hipertensao != null && hipertensao == "true")
+            {
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#hipertensao"))));
+                element.Add(new XElement("ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#HipertensaoArterialSistematica")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#hipertensao"))));
             }
 
             doc.Save("arquivos/Resultado.owl");
