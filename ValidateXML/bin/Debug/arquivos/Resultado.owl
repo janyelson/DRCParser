@@ -2127,7 +2127,58 @@ O paciente não apresenta DRC se o RAC estiver com níveis normais.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
-<Declaration><NamedIndividual URI="#genero" /></Declaration><ClassAssertion><Class URI="#Genero" /><NamedIndividual URI="#genero" /></ClassAssertion><ObjectPropertyAssertion><ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" /><NamedIndividual URI="#genero" /><NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino" /></ObjectPropertyAssertion><Declaration><NamedIndividual URI="#raca" /></Declaration><ClassAssertion><Class URI="#Raca" /><NamedIndividual URI="#raca" /></ClassAssertion><ObjectPropertyAssertion><ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" /><NamedIndividual URI="#raca" /><NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta" /></ObjectPropertyAssertion><Declaration><NamedIndividual URI="#idade" /></Declaration><ClassAssertion xmlns=""><Class URI="#Idade" xmlns="http://www.w3.org/2002/07/owl#" /><NamedIndividual URI="#idade" xmlns="http://www.w3.org/2002/07/owl#" /></ClassAssertion><DataPropertyAssertion><DataProperty abbreviatedIRI="owl:topDataProperty" /><NamedIndividual URI="#idade" /><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">75</Literal></DataPropertyAssertion><Declaration><NamedIndividual URI="#rac" /></Declaration><ClassAssertion><Class URI="#RelacaoAlbuminaCreatinina" /><NamedIndividual URI="#rac" /></ClassAssertion><Declaration><NamedIndividual URI="#tfg" /></Declaration><ClassAssertion><Class URI="#TFG3A" /><NamedIndividual URI="#tfg" /></ClassAssertion><SameIndividual><NamedIndividual URI="#TFGI3A" /><NamedIndividual URI="#tfg" /></SameIndividual><Declaration><NamedIndividual URI="#creatinina" /></Declaration><ClassAssertion><Class URI="#CreatininaSerica" /><NamedIndividual URI="#creatinina" /></ClassAssertion><DataPropertyAssertion><DataProperty abbreviatedIRI="owl:topDataProperty" /><NamedIndividual URI="#creatinina" /><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">19</Literal></DataPropertyAssertion><Declaration><NamedIndividual URI="#albumina" /></Declaration><ClassAssertion><Class URI="#A2" /><NamedIndividual URI="#albumina" /></ClassAssertion><Declaration><NamedIndividual URI="#policistica" /></Declaration><ClassAssertion><Class URI="#DoencaPolicisticaRenal" /><NamedIndividual URI="#policistica" /></ClassAssertion></Ontology>
+
+    <Declaration>
+        <NamedIndividual URI="#genero" />
+    </Declaration>
+    <ClassAssertion>
+        <Class URI="#Genero" />
+        <NamedIndividual URI="#genero" />
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
+        <NamedIndividual URI="#genero" />
+        <NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
+    </ObjectPropertyAssertion>
+
+    <Declaration>
+        <NamedIndividual URI="#raca" />
+    </Declaration>
+    <ClassAssertion>
+        <Class URI="#Raca" />
+        <NamedIndividual URI="#raca" />
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" />
+        <NamedIndividual URI="#raca" />
+        <NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta" />
+    </ObjectPropertyAssertion>
+    <Declaration>
+        <NamedIndividual URI="#idade" />
+    </Declaration>
+    <ClassAssertion xmlns="">
+        <Class URI="#Idade" xmlns="http://www.w3.org/2002/07/owl#" />
+        <NamedIndividual URI="#idade" xmlns="http://www.w3.org/2002/07/owl#" />
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty" />
+        <NamedIndividual URI="#idade" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">63</Literal>
+    </DataPropertyAssertion>
+
+    <Declaration>
+        <NamedIndividual URI="#creatinina" />
+    </Declaration>
+    <ClassAssertion>
+        <Class URI="#CreatininaSerica" />
+        <NamedIndividual URI="#creatinina" />
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty" />
+        <NamedIndividual URI="#creatinina" />
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1.60</Literal>
+    </DataPropertyAssertion>
+</Ontology>
 
 
 

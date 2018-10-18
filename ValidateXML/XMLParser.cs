@@ -175,47 +175,56 @@ namespace ValidateXML
 
             string generoURI = "http://purl.obolibrary.org/obo/ontoneo.owl#";
             string racaURI = "http://purl.obolibrary.org/obo/ontoneo.owl#";
-            if (genero == "at0007") generoURI += "Masculino";
-            else generoURI += "Feminino";
 
-            if (raca == "at0009") racaURI += "Preta";
-            else if(raca == "at0012") racaURI += "Parda";
-            else if (raca == "at0010") racaURI += "Branca";
-            else if (raca == "at0011") racaURI += "Amarela";
 
             //Dados do paciente
             //Genero
-            element.Add(new XElement(owl + "Declaration", 
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero"))));
-            element.Add(new XElement(owl + "ClassAssertion",
-                new XElement(owl + "Class", new XAttribute("URI", "#Genero")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero"))));
-            element.Add(new XElement(owl + "ObjectPropertyAssertion",
-                new XElement(owl + "ObjectProperty", new XAttribute("URI", "http://purl.obolibrary.org/obo/ontoneo.owl#temGenero")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", generoURI))));
-            
+            if (genero != null)
+            {
+                if (genero == "at0007") generoURI += "Masculino";
+                else generoURI += "Feminino";
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#Genero")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero"))));
+                element.Add(new XElement(owl + "ObjectPropertyAssertion",
+                    new XElement(owl + "ObjectProperty", new XAttribute("URI", "http://purl.obolibrary.org/obo/ontoneo.owl#temGenero")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#genero")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", generoURI))));
+            }
+
             //Raca
-            element.Add(new XElement(owl + "Declaration",
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca"))));
-            element.Add(new XElement(owl + "ClassAssertion",
-                new XElement(owl + "Class", new XAttribute("URI", "#Raca")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca"))));
-            element.Add(new XElement(owl + "ObjectPropertyAssertion",
-                new XElement(owl + "ObjectProperty", new XAttribute("URI", "http://purl.obolibrary.org/obo/ontoneo.owl#temRaca")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", racaURI))));
+            if (raca != null)
+            {
+                if (raca == "at0009") racaURI += "Preta";
+                else if (raca == "at0012") racaURI += "Parda";
+                else if (raca == "at0010") racaURI += "Branca";
+                else if (raca == "at0011") racaURI += "Amarela";
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#Raca")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca"))));
+                element.Add(new XElement(owl + "ObjectPropertyAssertion",
+                    new XElement(owl + "ObjectProperty", new XAttribute("URI", "http://purl.obolibrary.org/obo/ontoneo.owl#temRaca")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#raca")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", racaURI))));
+            }
 
             //Idade
-            element.Add(new XElement(owl + "Declaration",
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade"))));
-            element.Add(new XElement("ClassAssertion",
-                new XElement(owl + "Class", new XAttribute("URI", "#Idade")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade"))));
-            element.Add(new XElement(owl + "DataPropertyAssertion",
-                new XElement(owl + "DataProperty", new XAttribute("abbreviatedIRI", "owl:topDataProperty")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade")),
-                new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), idade)));
+            if (idade != null)
+            {
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#Idade")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade"))));
+                element.Add(new XElement(owl + "DataPropertyAssertion",
+                    new XElement(owl + "DataProperty", new XAttribute("abbreviatedIRI", "owl:topDataProperty")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#idade")),
+                    new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), idade)));
+            }
 
             //Alteracao de imagem
             if(alteracaoNaImagem != null && alteracaoNaImagem == "true")
@@ -253,26 +262,32 @@ namespace ValidateXML
             }
 
             //Creatinina Serica
-            element.Add(new XElement(owl + "Declaration",
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina"))));
-            element.Add(new XElement(owl + "ClassAssertion",
-                new XElement(owl + "Class", new XAttribute("URI", "#CreatininaSerica")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina"))));
-            element.Add(new XElement(owl + "DataPropertyAssertion",
-                new XElement(owl + "DataProperty", new XAttribute("abbreviatedIRI", "owl:topDataProperty")),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina")),
-                new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), creatinina)));
+            if (creatinina != null)
+            {
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#CreatininaSerica")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina"))));
+                element.Add(new XElement(owl + "DataPropertyAssertion",
+                    new XElement(owl + "DataProperty", new XAttribute("abbreviatedIRI", "owl:topDataProperty")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#creatinina")),
+                    new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), creatinina)));
+            }
 
-            string classA = "#";
-            if (categoriaAlbumina == "at0006") classA += "A1";
-            else if (categoriaAlbumina == "at0007") classA += "A2";
-            else if (categoriaAlbumina == "at0008") classA += "A3";
+            if (categoriaAlbumina != null)
+            {
+                string classA = "#";
+                if (categoriaAlbumina == "at0006") classA += "A1";
+                else if (categoriaAlbumina == "at0007") classA += "A2";
+                else if (categoriaAlbumina == "at0008") classA += "A3";
 
-            element.Add(new XElement(owl + "Declaration",
+                element.Add(new XElement(owl + "Declaration",
+                        new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", classA)),
                     new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
-            element.Add(new XElement(owl + "ClassAssertion",
-                new XElement(owl + "Class", new XAttribute("URI", classA)),
-                new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
+            }
 
             if (equ != null && equ == "true")
             {
