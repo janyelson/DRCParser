@@ -27,8 +27,8 @@ namespace ValidateXML
 
         string creatinina;
 
-        string albumina;
-        string categoriaAlbumina;
+        string albuminuria;
+        string categoriaAlbuminuria;
 
         string equ;
         string caracteristicasEqu;
@@ -92,14 +92,6 @@ namespace ValidateXML
             }
 
             //Exames
-            //RAC
-            try
-            {
-                this.rac = doc.XPathSelectElement(path + "tp:Exames/tp:RAC/" + data + "tp:Relação_albuminuria_creatinuria/" + value + "tp:magnitude", namespaceManager).Value;
-            }
-            catch (NullReferenceException e) {
-                this.rac = null;
-            }
             //TFG
             try
             {
@@ -125,8 +117,8 @@ namespace ValidateXML
             //Nivel de albuminuria
             try
             {
-                this.albumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Nível_de_albumina/" + value + "tp:magnitude", namespaceManager).Value;
-                this.categoriaAlbumina = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Categoria/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
+                this.albuminuria = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Nível_de_albuminuria/" + value + "tp:magnitude", namespaceManager).Value;
+                this.categoriaAlbuminuria = doc.XPathSelectElement(path + "tp:Exames/tp:Nível_de_albuminuria/" + data + "tp:Categoria/" + value + "tp:defining_code/tp:code_string", namespaceManager).Value;
             }
             catch (NullReferenceException e)
             {
@@ -237,16 +229,6 @@ namespace ValidateXML
             }
 
             //Exame
-            //RAC
-            if (rac != null)
-            {
-                element.Add(new XElement(owl + "Declaration",
-                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#rac"))));
-                element.Add(new XElement(owl + "ClassAssertion",
-                    new XElement(owl + "Class", new XAttribute("URI", "#RelacaoAlbuminaCreatinina")),
-                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#rac"))));
-            }
-
             //TFG
             if (tfg != null) {
                 
@@ -275,12 +257,18 @@ namespace ValidateXML
                     new XElement(owl + "Literal", new XAttribute("datatypeIRI", "http://www.w3.org/2001/XMLSchema#int"), creatinina)));
             }
 
-            if (categoriaAlbumina != null)
+            if (categoriaAlbuminuria != null)
             {
+                element.Add(new XElement(owl + "Declaration",
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#rac"))));
+                element.Add(new XElement(owl + "ClassAssertion",
+                    new XElement(owl + "Class", new XAttribute("URI", "#RelacaoAlbuminaCreatinina")),
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#rac"))));
+
                 string classA = "#";
-                if (categoriaAlbumina == "at0006") classA += "A1";
-                else if (categoriaAlbumina == "at0007") classA += "A2";
-                else if (categoriaAlbumina == "at0008") classA += "A3";
+                if (categoriaAlbuminuria == "at0006") classA += "A1";
+                else if (categoriaAlbuminuria == "at0007") classA += "A2";
+                else if (categoriaAlbuminuria == "at0008") classA += "A3";
 
                 element.Add(new XElement(owl + "Declaration",
                         new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
@@ -426,17 +414,13 @@ namespace ValidateXML
             Console.WriteLine("Categoria: " + categoriaTfg);
 
             Console.WriteLine();
-            Console.WriteLine("RAC: ");
-            Console.WriteLine("Valor: " + rac);
-
-            Console.WriteLine();
             Console.WriteLine("Creatinina serica: ");
             Console.WriteLine("Valor: " + creatinina);
 
             Console.WriteLine();
             Console.WriteLine("Nivel de albuminuria: ");
-            Console.WriteLine("Valor: " + albumina);
-            Console.WriteLine("Categoria: " + categoriaAlbumina);
+            Console.WriteLine("Valor: " + albuminuria);
+            Console.WriteLine("Categoria: " + categoriaAlbuminuria);
 
             Console.WriteLine();
             Console.WriteLine("EQU EAS: ");

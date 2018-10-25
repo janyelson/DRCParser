@@ -105,30 +105,6 @@
 		<Exames archetype_node_id="openEHR-EHR-SECTION.exames.v0" type="SECTION">
 			<name><value>Exames</value></name>
 
-			<RAC archetype_node_id="openEHR-EHR-OBSERVATION.rac.v0" type="OBSERVATION"> <!-- Nao obrigatorio -->
-				<name> <value>RAC</value></name> 
-
-				<language> <terminology_id> <value>ISO_639-1</value> </terminology_id><code_string>en</code_string> </language>
-				<encoding> <terminology_id><value>IANA_character-sets</value></terminology_id> <code_string>UTF-8</code_string></encoding>
-				<subject></subject>
-
-				<data archetype_node_id="at0001"> <Any_event_as_Point_Event archetype_node_id="at0002" type="POINT_EVENT">	
-					<name> <value>Any event</value> </name>
-
-					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>			
-					<data archetype_node_id="at0003" type="ITEM_TREE"> <!-- Obrigatório --> 
-						<Relação_albuminuria_creatinuria archetype_node_id="at0004" type="ELEMENT" valueType="DV_QUANTITY"> <!-- Nao obrigatorio -->
-							<name> <value>Relação albuminúria creatinúria</value> </name>	
-							
-							<value>
-								<magnitude>20</magnitude> 
-								<units>%</units>
-							</value>
-						</Relação_albuminuria_creatinuria>
-					</data>
-				</Any_event_as_Point_Event> </data>
-			</RAC>
-
 			<TFG archetype_node_id="openEHR-EHR-OBSERVATION.tfg.v0" type="OBSERVATION">
 				<name><value>TFG</value></name> 
 
@@ -201,14 +177,14 @@
 
 					<time><value xmlns="http://schemas.openehr.org/v1">2002-05-30T09:30:10Z</value></time>
 					<data archetype_node_id="at0003" type="ITEM_TREE"> <!-- Obrigatório --> 
-						<Nível_de_albumina archetype_node_id="at0004" type="ELEMENT" valueType="DV_QUANTITY"> <!-- obrigatorio -->
-							<name> <value>Nível de albumina</value> </name>
+						<Nível_de_albuminuria archetype_node_id="at0004" type="ELEMENT" valueType="DV_QUANTITY"> <!-- obrigatorio -->
+							<name> <value>Nível de albuminuria</value> </name>
 
 							<value>
 								<magnitude>100</magnitude>
 								<units>mg/24h</units>
 							</value>		
-						</Nível_de_albumina>
+						</Nível_de_albuminuria>
 
 						<Categoria archetype_node_id="at0005" type="ELEMENT" valueType="DV_CODED_TEXT">
 							<name> <value>Categoria</value> </name> 
