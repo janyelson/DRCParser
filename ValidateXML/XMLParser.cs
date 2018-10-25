@@ -271,10 +271,10 @@ namespace ValidateXML
                 else if (categoriaAlbuminuria == "at0008") classA += "A3";
 
                 element.Add(new XElement(owl + "Declaration",
-                        new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
+                        new XElement(owl + "NamedIndividual", new XAttribute("URI", "#categoria_albuminuria"))));
                 element.Add(new XElement(owl + "ClassAssertion",
                     new XElement(owl + "Class", new XAttribute("URI", classA)),
-                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#albumina"))));
+                    new XElement(owl + "NamedIndividual", new XAttribute("URI", "#categoria_albuminuria"))));
             }
 
             if (equ != null && equ == "true")

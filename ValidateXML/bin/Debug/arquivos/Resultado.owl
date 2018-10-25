@@ -1,616 +1,641 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" ontologyIRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl" versionIRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.1.0.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl" />
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#" />
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace" />
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#" />
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#" />
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl"
+     versionIRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.1.0.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/ceciliapegado/ontologies/2016/12/ontodrc.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ONTODRC</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Auxiliar profissionais da saúde da atenção primária, na resolução de problemas, tomada de decisões e ações, dando suporte ao encaminhamento apropriado para os especialistas em nefrologia.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Saude - Nefrologia</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Produzida por Cecília Neta Alves Pegado</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Informações sobre os passos que devem ser seguidos para realizar o diagnóstico e estadiamento da DRC;
 
 Informações sobre quando deve-se encaminhar o paciente para os especialistas em Nefrologia;</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#A1" />
+        <Class IRI="#A1"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Realiza" />
+        <ObjectProperty IRI="#Realiza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ClassificacaoDeRiscoDaDRC" />
+        <Class IRI="#ClassificacaoDeRiscoDaDRC"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaPolicisticaRenal" />
+        <Class IRI="#DoencaPolicisticaRenal"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TFGI2" />
+        <NamedIndividual IRI="#TFGI2"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DiabetesMellitus" />
+        <Class IRI="#DiabetesMellitus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio2" />
+        <Class IRI="#CondutaEstagio2"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio2" />
+        <Class IRI="#DoencaRenalCronicaEstagio2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG3B" />
+        <Class IRI="#TFG3B"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio3B" />
+        <Class IRI="#CondutaEstagio3B"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorQue" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorQue"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorIgual" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorIgual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Parda" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Parda"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorIgual" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorIgual"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CKD-EPI" />
+        <Class IRI="#CKD-EPI"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TFGI1" />
+        <NamedIndividual IRI="#TFGI1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio1" />
+        <Class IRI="#CondutaEstagio1"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Paciente" />
+        <Class IRI="#Paciente"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Entre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Entre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio3A" />
+        <Class IRI="#CondutaEstagio3A"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MedicoDaAtencaoPrimaria" />
+        <Class IRI="#MedicoDaAtencaoPrimaria"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Conduta" />
+        <NamedIndividual IRI="#raca"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#A3" />
+        <NamedIndividual IRI="#creatinina"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio" />
+        <Class IRI="#Conduta"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CreatininaSerica" />
+        <Class IRI="#A3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TFGI5" />
+        <NamedIndividual IRI="#categoria_albuminuria"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio3B" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#CreatininaSerica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Risco_Alto" />
+        <NamedIndividual IRI="#TFGI5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Indigena" />
+        <Class IRI="#DoencaRenalCronicaEstagio3B"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Exames" />
+        <Class IRI="#Estadiamento"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AlteracaoDaImagem" />
+        <Class IRI="#Risco_Alto"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Indigena"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Baixo_Risco" />
+        <Class IRI="#Exames"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RiscoMuitoAlto" />
+        <Class IRI="#AlteracaoDaImagem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#A2" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Amarela" />
+        <Class IRI="#Baixo_Risco"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
+        <Class IRI="#RiscoMuitoAlto"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <Class IRI="#A2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Nefrologista" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Amarela"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TFGI4" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG5" />
+        <Class IRI="#Nefrologista"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio3A" />
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio1" />
+        <NamedIndividual IRI="#TFGI4"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorQue" />
+        <Class IRI="#TFG5"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
+        <Class IRI="#DoencaRenalCronicaEstagio3A"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#EDiagnosticadoPor" />
+        <Class IRI="#DoencaRenalCronicaEstagio1"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2" />
+        <NamedIndividual IRI="#genero"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Vacinas" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorQue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Medico" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG4" />
+        <ObjectProperty IRI="#EDiagnosticadoPor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LitiaseRenal" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Vacinas"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" />
+        <Class IRI="#Medico"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta" />
+        <Class IRI="#TFG4"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4Min" />
+        <Class IRI="#LitiaseRenal"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorQue" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Branca" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio5" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4Min"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorQue"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGI3B" />
+        <AnnotationProperty IRI="#SCTID"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Branca"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor" />
+        <Class IRI="#CondutaEstagio5"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4" />
+        <NamedIndividual IRI="#rac"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG2" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HipertensaoArterialSistemica" />
+        <NamedIndividual IRI="#idade"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGI3B"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CategoriasDosNiveisDeAlbuminuria" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CondutaEstagio4" />
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TFGI3A" />
+        <Class IRI="#TFG2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio4" />
+        <Class IRI="#HipertensaoArterialSistemica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Idade" />
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RelacaoAlbuminaCreatinina" />
+        <Class IRI="#CategoriasDosNiveisDeAlbuminuria"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#CondutaEstagio4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue" />
+        <NamedIndividual IRI="#TFGI3A"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <Class IRI="#DoencaRenalCronicaEstagio4"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo" />
+        <Class IRI="#Idade"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Altura" />
+        <Class IRI="#RelacaoAlbuminaCreatinina"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Genero" />
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD5" />
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RiscoModeradamenteAumentado" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorIgual" />
+        <Class IRI="#Altura"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG1" />
+        <Class IRI="#Genero"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Raca" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD5"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Infecção_Urinária_Recorrente" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InformacoesDoPaciente" />
+        <Class IRI="#RiscoModeradamenteAumentado"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronica" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorIgual"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#OEncaminhamentoDeveTer" />
+        <Class IRI="#TFG1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TFG3A" />
+        <Class IRI="#Raca"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DoencaRenalCronicaEstagio5" />
+        <Class IRI="#Infecção_Urinária_Recorrente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformacoesDoPaciente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoencaRenalCronica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OEncaminhamentoDeveTer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TFG3A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoencaRenalCronicaEstagio5"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#A1" />
-        <Class IRI="#CategoriasDosNiveisDeAlbuminuria" />
+        <Class IRI="#A1"/>
+        <Class IRI="#CategoriasDosNiveisDeAlbuminuria"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#A2" />
-        <Class IRI="#CategoriasDosNiveisDeAlbuminuria" />
+        <Class IRI="#A2"/>
+        <Class IRI="#CategoriasDosNiveisDeAlbuminuria"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#A3" />
-        <Class IRI="#CategoriasDosNiveisDeAlbuminuria" />
+        <Class IRI="#A3"/>
+        <Class IRI="#CategoriasDosNiveisDeAlbuminuria"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AlteracaoDaImagem" />
-        <Class IRI="#Exames" />
+        <Class IRI="#AlteracaoDaImagem"/>
+        <Class IRI="#Exames"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Altura" />
-        <Class IRI="#InformacoesDoPaciente" />
+        <Class IRI="#Altura"/>
+        <Class IRI="#InformacoesDoPaciente"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Baixo_Risco" />
-        <Class IRI="#ClassificacaoDeRiscoDaDRC" />
+        <Class IRI="#Baixo_Risco"/>
+        <Class IRI="#ClassificacaoDeRiscoDaDRC"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CKD-EPI" />
+        <Class IRI="#CKD-EPI"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza"/>
             <ObjectIntersectionOf>
-                <Class IRI="#CreatininaSerica" />
-                <Class IRI="#Genero" />
-                <Class IRI="#Idade" />
-                <Class IRI="#Raca" />
+                <Class IRI="#CreatininaSerica"/>
+                <Class IRI="#Genero"/>
+                <Class IRI="#Idade"/>
+                <Class IRI="#Raca"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio1" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio1"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio2" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio2"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio3A" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio3A"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio3B" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio3B"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio4" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio4"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CondutaEstagio5" />
-        <Class IRI="#Conduta" />
+        <Class IRI="#CondutaEstagio5"/>
+        <Class IRI="#Conduta"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CreatininaSerica" />
-        <Class IRI="#Exames" />
+        <Class IRI="#CreatininaSerica"/>
+        <Class IRI="#Exames"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CreatininaSerica" />
+        <Class IRI="#CreatininaSerica"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor" />
-            <Class IRI="#CKD-EPI" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor"/>
+            <Class IRI="#CKD-EPI"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DiabetesMellitus" />
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#DiabetesMellitus"/>
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaPolicisticaRenal" />
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#DoencaPolicisticaRenal"/>
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio1" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio1"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio1" />
+        <Class IRI="#DoencaRenalCronicaEstagio1"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG1" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG1"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio2" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio2"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio2" />
+        <Class IRI="#DoencaRenalCronicaEstagio2"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG2" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG2"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio3A" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio3A"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio3A" />
+        <Class IRI="#DoencaRenalCronicaEstagio3A"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG3A" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG3A"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio3B" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio3B"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio3B" />
+        <Class IRI="#DoencaRenalCronicaEstagio3B"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG3B" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG3B"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio4" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio4"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio4" />
+        <Class IRI="#DoencaRenalCronicaEstagio4"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG4" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG4"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio5" />
-        <Class IRI="#Estadiamento" />
+        <Class IRI="#DoencaRenalCronicaEstagio5"/>
+        <Class IRI="#Estadiamento"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DoencaRenalCronicaEstagio5" />
+        <Class IRI="#DoencaRenalCronicaEstagio5"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#TFG5" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#TFG5"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Genero" />
-        <Class IRI="#InformacoesDoPaciente" />
+        <Class IRI="#Genero"/>
+        <Class IRI="#InformacoesDoPaciente"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HipertensaoArterialSistemica" />
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#HipertensaoArterialSistemica"/>
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Idade" />
-        <Class IRI="#InformacoesDoPaciente" />
+        <Class IRI="#Idade"/>
+        <Class IRI="#InformacoesDoPaciente"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Infecção_Urinária_Recorrente" />
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#Infecção_Urinária_Recorrente"/>
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LitiaseRenal" />
-        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns" />
+        <Class IRI="#LitiaseRenal"/>
+        <Class IRI="#OutrosMotivosDeEncaminhamentoMaisComuns"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MedicoDaAtencaoPrimaria" />
-        <Class IRI="#Medico" />
+        <Class IRI="#MedicoDaAtencaoPrimaria"/>
+        <Class IRI="#Medico"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MedicoDaAtencaoPrimaria" />
+        <Class IRI="#MedicoDaAtencaoPrimaria"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#CondutaEstagio3A" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#CondutaEstagio3A"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Nefrologista" />
-        <Class IRI="#Medico" />
+        <Class IRI="#Nefrologista"/>
+        <Class IRI="#Medico"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Raca" />
-        <Class IRI="#InformacoesDoPaciente" />
+        <Class IRI="#Raca"/>
+        <Class IRI="#InformacoesDoPaciente"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RelacaoAlbuminaCreatinina" />
-        <Class IRI="#Exames" />
+        <Class IRI="#RelacaoAlbuminaCreatinina"/>
+        <Class IRI="#Exames"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RiscoModeradamenteAumentado" />
-        <Class IRI="#ClassificacaoDeRiscoDaDRC" />
+        <Class IRI="#RiscoModeradamenteAumentado"/>
+        <Class IRI="#ClassificacaoDeRiscoDaDRC"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RiscoMuitoAlto" />
-        <Class IRI="#ClassificacaoDeRiscoDaDRC" />
+        <Class IRI="#RiscoMuitoAlto"/>
+        <Class IRI="#ClassificacaoDeRiscoDaDRC"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Risco_Alto" />
-        <Class IRI="#ClassificacaoDeRiscoDaDRC" />
+        <Class IRI="#Risco_Alto"/>
+        <Class IRI="#ClassificacaoDeRiscoDaDRC"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG1" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG1"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG2" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG2"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG3A" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG3A"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG3B" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG3B"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG4" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG4"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TFG5" />
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TFG5"/>
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
-        <Class IRI="#Exames" />
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
+        <Class IRI="#Exames"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1" />
-        <Class IRI="#Exames" />
+        <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1"/>
+        <Class IRI="#Exames"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#CKD-EPI" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#CKD-EPI"/>
         </ObjectSomeValuesFrom>
-        <Class IRI="#TaxaDeFiltracaoGlomerular" />
+        <Class IRI="#TaxaDeFiltracaoGlomerular"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
-            <Class IRI="#CreatininaSerica" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
+            <Class IRI="#CreatininaSerica"/>
         </ObjectSomeValuesFrom>
-        <Class IRI="#Infecção_Urinária_Recorrente" />
+        <Class IRI="#Infecção_Urinária_Recorrente"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#AlteracaoDaImagem" />
-                <Class IRI="#CreatininaSerica" />
+                <Class IRI="#AlteracaoDaImagem"/>
+                <Class IRI="#CreatininaSerica"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#HipertensaoArterialSistemica" />
+        <Class IRI="#HipertensaoArterialSistemica"/>
     </SubClassOf>
     <SubClassOf>
         <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Sinais e sintomas;
 
 2. Resultado de ecografia urinária ou de Raio X, com data (para cálculos ureterais menores que 10 mm, são necessários dois exames, com no mínimo seis semanas de diferença entre eles);
@@ -628,548 +653,592 @@ Informações sobre quando deve-se encaminhar o paciente para os especialistas e
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
         </Annotation>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#AlteracaoDaImagem" />
-                <Class IRI="#CreatininaSerica" />
-                <Class IRI="#Genero" />
-                <Class IRI="#Idade" />
-                <Class IRI="#Raca" />
+                <Class IRI="#AlteracaoDaImagem"/>
+                <Class IRI="#CreatininaSerica"/>
+                <Class IRI="#Genero"/>
+                <Class IRI="#Idade"/>
+                <Class IRI="#Raca"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#LitiaseRenal" />
+        <Class IRI="#LitiaseRenal"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#AlteracaoDaImagem" />
-                <Class IRI="#CreatininaSerica" />
-                <Class IRI="#RelacaoAlbuminaCreatinina" />
-                <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1" />
+                <Class IRI="#AlteracaoDaImagem"/>
+                <Class IRI="#CreatininaSerica"/>
+                <Class IRI="#RelacaoAlbuminaCreatinina"/>
+                <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1"/>
                 <ObjectUnionOf>
-                    <Class IRI="#TFG4" />
-                    <Class IRI="#TFG5" />
+                    <Class IRI="#TFG4"/>
+                    <Class IRI="#TFG5"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaRenalCronica" />
+        <Class IRI="#DoencaRenalCronica"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#AlteracaoDaImagem" />
-                <Class IRI="#CreatininaSerica" />
-                <Class IRI="#RelacaoAlbuminaCreatinina" />
+                <Class IRI="#AlteracaoDaImagem"/>
+                <Class IRI="#CreatininaSerica"/>
+                <Class IRI="#RelacaoAlbuminaCreatinina"/>
                 <ObjectUnionOf>
-                    <Class IRI="#TFG4" />
-                    <Class IRI="#TFG5" />
+                    <Class IRI="#TFG4"/>
+                    <Class IRI="#TFG5"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DiabetesMellitus" />
+        <Class IRI="#DiabetesMellitus"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#AlteracaoDaImagem" />
-                <Class IRI="#CreatininaSerica" />
-                <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1" />
+                <Class IRI="#AlteracaoDaImagem"/>
+                <Class IRI="#CreatininaSerica"/>
+                <Class IRI="#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaPolicisticaRenal" />
+        <Class IRI="#DoencaPolicisticaRenal"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#EDiagnosticadoPor" />
+            <ObjectProperty IRI="#EDiagnosticadoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG1" />
+                <Class IRI="#TFG1"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaRenalCronica" />
+        <Class IRI="#DoencaRenalCronica"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#EDiagnosticadoPor" />
+            <ObjectProperty IRI="#EDiagnosticadoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG2" />
+                <Class IRI="#TFG2"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaRenalCronica" />
+        <Class IRI="#DoencaRenalCronica"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#EDiagnosticadoPor" />
+            <ObjectProperty IRI="#EDiagnosticadoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG3A" />
+                <Class IRI="#TFG3A"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaRenalCronica" />
+        <Class IRI="#DoencaRenalCronica"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#EDiagnosticadoPor" />
+            <ObjectProperty IRI="#EDiagnosticadoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG3B" />
+                <Class IRI="#TFG3B"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#DoencaRenalCronica" />
+        <Class IRI="#DoencaRenalCronica"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Realiza" />
+            <ObjectProperty IRI="#Realiza"/>
             <ObjectUnionOf>
-                <Class IRI="#CondutaEstagio1" />
-                <Class IRI="#CondutaEstagio2" />
-                <Class IRI="#CondutaEstagio3A" />
+                <Class IRI="#CondutaEstagio1"/>
+                <Class IRI="#CondutaEstagio2"/>
+                <Class IRI="#CondutaEstagio3A"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#MedicoDaAtencaoPrimaria" />
+        <Class IRI="#MedicoDaAtencaoPrimaria"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Realiza" />
+            <ObjectProperty IRI="#Realiza"/>
             <ObjectUnionOf>
-                <Class IRI="#CondutaEstagio3B" />
-                <Class IRI="#CondutaEstagio4" />
-                <Class IRI="#CondutaEstagio5" />
+                <Class IRI="#CondutaEstagio3B"/>
+                <Class IRI="#CondutaEstagio4"/>
+                <Class IRI="#CondutaEstagio5"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
-        <Class IRI="#Nefrologista" />
+        <Class IRI="#Nefrologista"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#A1" />
-                <Class IRI="#TFG3B" />
+                <Class IRI="#A1"/>
+                <Class IRI="#TFG3B"/>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Risco_Alto" />
+        <Class IRI="#Risco_Alto"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#A1" />
+                <Class IRI="#A1"/>
                 <ObjectUnionOf>
-                    <Class IRI="#TFG1" />
-                    <Class IRI="#TFG2" />
+                    <Class IRI="#TFG1"/>
+                    <Class IRI="#TFG2"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Baixo_Risco" />
+        <Class IRI="#Baixo_Risco"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#A2" />
-                <Class IRI="#TFG3A" />
+                <Class IRI="#A2"/>
+                <Class IRI="#TFG3A"/>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Risco_Alto" />
+        <Class IRI="#Risco_Alto"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#A3" />
-                <Class IRI="#TFG1" />
+                <Class IRI="#A3"/>
+                <Class IRI="#TFG1"/>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Risco_Alto" />
+        <Class IRI="#Risco_Alto"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#A3" />
-                <Class IRI="#TFG2" />
+                <Class IRI="#A3"/>
+                <Class IRI="#TFG2"/>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Risco_Alto" />
+        <Class IRI="#Risco_Alto"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG1" />
+                <Class IRI="#TFG1"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio1" />
+        <Class IRI="#DoencaRenalCronicaEstagio1"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG2" />
+                <Class IRI="#TFG2"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio2" />
+        <Class IRI="#DoencaRenalCronicaEstagio2"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG3A" />
+                <Class IRI="#TFG3A"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio3A" />
+        <Class IRI="#DoencaRenalCronicaEstagio3A"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG3B" />
+                <Class IRI="#TFG3B"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio3B" />
+        <Class IRI="#DoencaRenalCronicaEstagio3B"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG4" />
+                <Class IRI="#TFG4"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio4" />
+        <Class IRI="#DoencaRenalCronicaEstagio4"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectIntersectionOf>
-                <Class IRI="#TFG5" />
+                <Class IRI="#TFG5"/>
                 <ObjectUnionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#A2" />
-                    <Class IRI="#A3" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#A2"/>
+                    <Class IRI="#A3"/>
                 </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#DoencaRenalCronicaEstagio5" />
+        <Class IRI="#DoencaRenalCronicaEstagio5"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectUnionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="#A1" />
-                    <Class IRI="#TFG3A" />
+                    <Class IRI="#A1"/>
+                    <Class IRI="#TFG3A"/>
                 </ObjectIntersectionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="#A2" />
+                    <Class IRI="#A2"/>
                     <ObjectUnionOf>
-                        <Class IRI="#TFG1" />
-                        <Class IRI="#TFG2" />
+                        <Class IRI="#TFG1"/>
+                        <Class IRI="#TFG2"/>
                     </ObjectUnionOf>
                 </ObjectIntersectionOf>
             </ObjectUnionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#RiscoModeradamenteAumentado" />
+        <Class IRI="#RiscoModeradamenteAumentado"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor" />
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#EObtidoPor"/>
             <ObjectUnionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="#A1" />
+                    <Class IRI="#A1"/>
                     <ObjectUnionOf>
-                        <Class IRI="#TFG4" />
-                        <Class IRI="#TFG5" />
+                        <Class IRI="#TFG4"/>
+                        <Class IRI="#TFG5"/>
                     </ObjectUnionOf>
                 </ObjectIntersectionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="#A2" />
+                    <Class IRI="#A2"/>
                     <ObjectUnionOf>
-                        <Class IRI="#TFG3B" />
-                        <Class IRI="#TFG4" />
-                        <Class IRI="#TFG5" />
+                        <Class IRI="#TFG3B"/>
+                        <Class IRI="#TFG4"/>
+                        <Class IRI="#TFG5"/>
                     </ObjectUnionOf>
                 </ObjectIntersectionOf>
                 <ObjectIntersectionOf>
-                    <Class IRI="#A3" />
+                    <Class IRI="#A3"/>
                     <ObjectUnionOf>
-                        <Class IRI="#TFG3A" />
-                        <Class IRI="#TFG3B" />
-                        <Class IRI="#TFG4" />
-                        <Class IRI="#TFG5" />
+                        <Class IRI="#TFG3A"/>
+                        <Class IRI="#TFG3B"/>
+                        <Class IRI="#TFG4"/>
+                        <Class IRI="#TFG5"/>
                     </ObjectUnionOf>
                 </ObjectIntersectionOf>
             </ObjectUnionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#RiscoMuitoAlto" />
+        <Class IRI="#RiscoMuitoAlto"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#Realiza" />
+            <ObjectProperty IRI="#Realiza"/>
             <ObjectUnionOf>
-                <Class IRI="#DiabetesMellitus" />
-                <Class IRI="#DoencaPolicisticaRenal" />
-                <Class IRI="#DoencaRenalCronica" />
-                <Class IRI="#HipertensaoArterialSistemica" />
-                <Class IRI="#Infecção_Urinária_Recorrente" />
-                <Class IRI="#LitiaseRenal" />
+                <Class IRI="#DiabetesMellitus"/>
+                <Class IRI="#DoencaPolicisticaRenal"/>
+                <Class IRI="#DoencaRenalCronica"/>
+                <Class IRI="#HipertensaoArterialSistemica"/>
+                <Class IRI="#Infecção_Urinária_Recorrente"/>
+                <Class IRI="#LitiaseRenal"/>
             </ObjectUnionOf>
         </ObjectAllValuesFrom>
-        <Class IRI="#Nefrologista" />
+        <Class IRI="#Nefrologista"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio1" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio1"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio1" />
+        <Class IRI="#CondutaEstagio1"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio2" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio2"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio2" />
+        <Class IRI="#CondutaEstagio2"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio3A" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio3A"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio3A" />
+        <Class IRI="#CondutaEstagio3A"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio3B" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio3B"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio3B" />
+        <Class IRI="#CondutaEstagio3B"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio4" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio4"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio4" />
+        <Class IRI="#CondutaEstagio4"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
-            <Class IRI="#DoencaRenalCronicaEstagio5" />
+            <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
+            <Class IRI="#DoencaRenalCronicaEstagio5"/>
         </ObjectAllValuesFrom>
-        <Class IRI="#CondutaEstagio5" />
+        <Class IRI="#CondutaEstagio5"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#MedicoDaAtencaoPrimaria" />
-        <Class IRI="#Nefrologista" />
+        <Class IRI="#MedicoDaAtencaoPrimaria"/>
+        <Class IRI="#Nefrologista"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Raca" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Amarela" />
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Amarela"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Raca" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Branca" />
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Branca"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Genero" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Raca" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Indigena" />
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Indigena"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Genero" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino" />
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Raca" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Parda" />
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Parda"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Raca" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta" />
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#A2"/>
+        <NamedIndividual IRI="#categoria_albuminuria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CreatininaSerica"/>
+        <NamedIndividual IRI="#creatinina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genero"/>
+        <NamedIndividual IRI="#genero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idade"/>
+        <NamedIndividual IRI="#idade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RelacaoAlbuminaCreatinina"/>
+        <NamedIndividual IRI="#rac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raca"/>
+        <NamedIndividual IRI="#raca"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Masculino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
+        <NamedIndividual IRI="#genero"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca"/>
+        <NamedIndividual IRI="#raca"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Amarela"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B" />
-        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGI3B" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGI3B"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&gt;= 30 mL/min/1,73m² &amp;&amp; &lt;= 44 mL/min/1,73m²</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1" />
-        <NamedIndividual IRI="#TFGI1" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1"/>
+        <NamedIndividual IRI="#TFGI1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2" />
-        <NamedIndividual IRI="#TFGI2" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2"/>
+        <NamedIndividual IRI="#TFGI2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&gt;= 60 mL/min/1,73m² &amp;&amp; &lt;= 89 mL/min/1,73m²</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A" />
-        <NamedIndividual IRI="#TFGI3A" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A"/>
+        <NamedIndividual IRI="#TFGI3A"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&gt;= 45 mL/min/1,73m² &amp;&amp; &lt;= 59 mL/min/1,73m²</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4" />
-        <NamedIndividual IRI="#TFGI4" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4"/>
+        <NamedIndividual IRI="#TFGI4"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">29</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4Min" />
-        <NamedIndividual IRI="#TFGI4" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD4Min"/>
+        <NamedIndividual IRI="#TFGI4"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD5" />
-        <NamedIndividual IRI="#TFGI5" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD5"/>
+        <NamedIndividual IRI="#TFGI5"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&lt; 15 mL/min/1,73m²</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <NamedIndividual IRI="#creatinina"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1.60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <NamedIndividual IRI="#idade"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">68</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza" />
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Utiliza"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor" />
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar" />
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Realizar"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor" />
+        <ObjectProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#EUsadaPor"/>
     </InverseFunctionalObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
-        <Class IRI="#Genero" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero"/>
+        <Class IRI="#Genero"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" />
-        <Class IRI="#Raca" />
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca"/>
+        <Class IRI="#Raca"/>
     </ObjectPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1" />
-        <Class IRI="#TFG1" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD1"/>
+        <Class IRI="#TFG1"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2" />
-        <Class IRI="#TFG2" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD2"/>
+        <Class IRI="#TFG2"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A" />
-        <Class IRI="#TFG3A" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3A"/>
+        <Class IRI="#TFG3A"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B" />
-        <Class IRI="#TFG3B" />
+        <DataProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#TFGD3B"/>
+        <Class IRI="#TFG3B"/>
     </DataPropertyDomain>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://purl.obolibrary.org/obo/ontoneo.owl#Conduta</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Formas de manejo clínico do paciente com DRC conforme o estadiamento da doença (UNA-SUS/UFMA, 2014).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#AlteracaoDaImagem</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">As alterações em qualquer exame de imagem como raios-X simples de abdome, ultrassonografia dos rins e vias urinárias ou tomografia, podem ser utilizadas para identificar pacientes com DRC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AlteracaoDaImagem</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AlteracaoDaImagem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Altura</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Body height measure (observable entity)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Altura</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">50373000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Altura</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Altura</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Baixo_Risco</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low risk (qualifier value)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Baixo_Risco</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">723505004</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Baixo_Risco</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BaixoRisco</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula"/>
         <IRI>#CKD-EPI</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sexo Masculino e Negros e Com Creatinina Sérica ≤ 0,9 mg/dL: 
 
@@ -1205,142 +1274,142 @@ Sexo Feminino e Brancos e Com Creatinina Sérica &gt; 0,7 mg/dL: 
 TFG = 144 X [(Creatinina Sérica / 0,7) ^ (-1.209)] X [(0.993)^(Idade)]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CKD-EPI</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A fórmula CKD-EPI também possui limitações, podendo superestimar a TFG, além de ter sido derivada de uma amostragem com pouca variação étnica e número reduzido de idosos. No entanto, ao compararem a nova equação com a MDRD os resultados mostraram que a equação CKD-EPI teve melhor desempenho e foi mais precisa, podendo ate substituir as demais na prática clínica, (LEVEY ET AL. 2009), (SODRÉ E OLIVEIRA, 2014).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#CKD-EPI</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Do inglês Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI), o desenvolvimento dessa fórmula incluiu indivíduos com e sem DRC e é baseada na fórmula do Modification of Diet in Renal Disease (MDRD). A fórmula usa as mesmas quatro variáveis que a equação do MDRD, mas apresenta melhor desempenho e previsão de risco. A CKD-EPI tem como objetivo melhorar a acurácia da estimativa da TFG em pacientes com valores muito baixos ou muito elevados de TFG.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CategoriasDosNiveisDeAlbuminuria</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CategoriasDosNiveisDeAlbuminuria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ClassificacaoDeRiscoDaDRC</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ClassificacaoDeRiscoDaDRC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Conduta</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Management - action (qualifier value)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Conduta</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">129271007</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Conduta</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Condutas de manejo clínico da DRC conforme o estadiamento da doença.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Conduta</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conduta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
         <IRI>#CondutaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A avaliação da TFG e do exame sumário de urina (EAS) deverão ser realizados anualmente</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
         <IRI>#CondutaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unidades Básicas de Saúde (UBS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#CondutaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tratamento dos fatores de risco modificáveis de progressão da DRC e doença cardiovascular de acordo com as recomendações do Ministério da Saúde: controle da glicemia, da hipertensão arterial, displicemia,obesidade, doenças cardiovasculares, tabagismo e adequação do estilo de vida</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
         <IRI>#CondutaEstagio2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A avaliação da TFG e do exame sumário de urina (EAS) deverão ser realizados anualmente</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
         <IRI>#CondutaEstagio2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unidades Básicas de Saúde (UBS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#CondutaEstagio2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tratamento dos fatores de risco modificáveis de progressão da DRC e doença cardiovascular de acordo com as recomendações do Ministério da Saúde: controle da glicemia, da hipertensão arterial, displicemia,obesidade, doenças cardiovasculares, tabagismo e adequação do estilo de vida</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
         <IRI>#CondutaEstagio3A</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A avaliação da Taxa de Filtração Glomerular (TFG), do Exame Sumário de Urina (EAS) , da Relação albumina creatinina (RAC) e da dosagem de potássio sérico deverá ser realizada anualmente. A dosagem de potássio sérico justifica-se poruqe a redução de TFG está associada à redução da capacidade da sua excreção, bem como a hipercalemia associada a Inibidores da Enzima Conversora de Angiotensina (IECA) ou Bloqueadores dos Receptores da Angiotensina (BRA) é mais frequente quanto menor for a TFG. Em relação às alterações do metabolismo mineral e ósseo, menos de 10% desses pacientes apresentam alterações no nível sérico de fósforo e pouco mais de 20% no Hormônio da Paratireóide (PTH) sérico. Recomenda-se a dosagem anual do fósforo e do PTH intacto e, havendo alterações no seus níveis, o caso deve ser discutido com o nefrologista responsável pelo matriciamento da UBS.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
         <IRI>#CondutaEstagio3A</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unidades Básicas de Saúde (UBS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#CondutaEstagio3A</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tratamento dos fatores de risco modificáveis de progressão da DRC e doença cardiovascular de acordo com as recomendações do Ministério da Saúde: controle da glicemia, da hipertensão arterial, displicemia,obesidade, doenças cardiovasculares, tabagismo e adequação do estilo de vida.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio3A</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio3A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
         <IRI>#CondutaEstagio3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A avaliação da Taxa de Filtração Glomerular (TFG), do Exame Sumário de Urina (EAS) , da Relação albumina creatinina (RAC) e da dosagem de potássio sérico deverá ser realizada semestralmente. Os demais exames deverão ser realizados conforme segue: cálcio, fósforo, hematócrito e hemoglobina, ferritina e índice de saturação de transferrina (IST) em pacientes com diagnóstico de anemia (Hb &lt; 13 g/dL para homens e Hb &lt; 12 g/dL para mulheres),  Hormônio da Paratireóide (PTH) e proteínas totais e frações anualmente.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
         <IRI>#CondutaEstagio3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unidades Básicas de Saúde (UBS)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#CondutaEstagio3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tratamento dos fatores de risco modificáveis de progressão da DRC e doença cardiovascular de acordo com as recomendações do Ministério da Saúde: controle da glicemia, da hipertensão arterial, displicemia, obesidade, doenças cardiovasculares, tabagismo e adequação do estilo de vida. Havendo necessidade, as unidades de atenção especializadas em DRC poderão matriciar o acompanhamento do paciente nesse estágio da Doença.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio3B</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio4</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CondutaEstagio5</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CondutaEstagio5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CreatininaSerica</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CreatininaSerica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <IRI>#DiabetesMellitus</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">- Pacientes com taxa de filtração glomerular &lt; 30 /min/1,73 m²
  (estágio 4 e 5); ou
@@ -1351,17 +1420,17 @@ TFG = 144 X [(Creatinina Sérica / 0,7) ^ (-1.209)] X [(0.993)^(Idade)]</Literal
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DiabetesMellitus</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Diabetes mellitus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DiabetesMellitus</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">73211009</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DiabetesMellitus</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Resultado de exame de creatinina sérica, com data (se suspeita de perda rápida de função renal, colocar dois resultados da creatinina sérica com no mínimo seis meses de diferença entre eles);
 
@@ -1378,22 +1447,22 @@ albuminúria/creatinúria, com indicação do tipo de exame e data;
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DiabetesMellitus</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DiabetesMellitus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaPolicisticaRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congenital cystic kidney disease (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaPolicisticaRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">82525005</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DoencaPolicisticaRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Sinais e sintomas (descrever presença de dor lombar ou outros achados relevantes);
 
@@ -1412,12 +1481,12 @@ albuminúria/creatinúria, com indicação do tipo de exame e data;
 (MINISTÉRIO DA SAÚDE, 2015).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaPolicisticaRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaPolicisticaRenal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <IRI>#DoencaRenalCronica</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">-Taxa de filtração glomerular (TFG) &lt; 30 /min/1,73m2 (estágio 4 e 5); ou
 - Proteinúria; ou
@@ -1428,7 +1497,7 @@ albuminúria/creatinúria, com indicação do tipo de exame e data;
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DoencaRenalCronica</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Resultado de exame de creatinina sérica, com data (se suspeita de perda rápida de função renal, colocar dois resultados da creatinina sérica com no mínimo seis meses de diferença entre eles);
 
@@ -1446,204 +1515,204 @@ albuminúria/creatinúria, com indicação do tipo de exame e data;
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronica</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DoencaRenalCronica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chronic kidney disease stage 1 (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">431855005</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio1</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG maior igual a 90mL/min/1,73m² na presença de proteinúria ou hematúria glomerular ou alteração no exame de imagem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DoencaRenalCronicaEstagio1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio2</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chronic kidney disease stage 2 (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio2</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">431856006</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio2</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG entre 60 e 89 mL/min/1,73m²</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio2</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaRenalCronicaEstagio2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio3A</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chronic kidney disease stage 3A (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio3A</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">700378005</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio3A</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage3A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio3A</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TFG entre 45 e 59 mL/min/1,73m².</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio3A</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaRenalCronicaEstagio3A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio3B</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chronic kidney disease stage 3B (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio3B</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">700379002</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio3B</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage3B</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG entre 30 e 44 mL/min/1,73m²</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio3B</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaRenalCronicaEstagio3B</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio4</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> Chronic kidney disease stage 4 (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio4</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">431857002</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio4</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio4</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG entre 15 a 29 mL/min/1,73m²</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio4</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaRenalCronicaEstagio4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#DoencaRenalCronicaEstagio5</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chronic kidney disease stage 5 on dialysis (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#DoencaRenalCronicaEstagio5</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">714152005</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#sinominoEmIngles" />
+        <AnnotationProperty IRI="#sinominoEmIngles"/>
         <IRI>#DoencaRenalCronicaEstagio5</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChronicKidneyDiseaseStage5OnDialysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#DoencaRenalCronicaEstagio5</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG &lt; 15 mL/min/1,73m² em paciente que está em Terapia Renal Substitutiva (TRS)
 
 Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paciente diabéticos e com idade inferior a 18 anos, pode-se indicar o início da TRS quando a TFG for menor do que 15 mL/min/1,73m²</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoencaRenalCronicaEstagio5</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DoencaRenalCronicaEstagio5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Estadiamento</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Staging of disease (attribute)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Estadiamento</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">260760003</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Estadiamento</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A  Kidney Disease Improving Global Outcomes (KDIGO) recomenda que a DRC seja classificada com base na causa, categorias da Taxa de Filtração Glomerular (TFG) e categorias de albuminúria (KDIGO, 2012).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#FSN</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Fully Specified Name (FSN) é um termo único entre as descrições ativas no SNOMED CT que denomina o significado de um código conceitual de forma a ser inequívoca e estável em múltiplos contextos (SNOMED CT Glossary, 2017).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FSN</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FSN</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Genero</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gender (observable entity)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Genero</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">263495000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Genero</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Genero</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <IRI>#HipertensaoArterialSistemica</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">- Suspeita de hipertensão secundária; ou
 
@@ -1652,17 +1721,17 @@ Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paci
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#HipertensaoArterialSistemica</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Hypertensive disorder, systemic arterial (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#HipertensaoArterialSistemica</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">38341003</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HipertensaoArterialSistemica</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Sinais e sintomas;
 
@@ -1679,27 +1748,27 @@ Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paci
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HipertensaoArterialSistemica</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">HipertensaoArterialSistemica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <IRI>#Infecção_Urinária_Recorrente</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Infecção do Trato Urinário (ITU) recorrente mesmo com profilaxia adequada, após exclusão de causas anatômicas urológicas ou ginecológicas (MINISTÉRIO DA SAÚDE, 2015).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Infecção_Urinária_Recorrente</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Recurrent urinary tract infection (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Infecção_Urinária_Recorrente</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">197927001</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Infecção_Urinária_Recorrente</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Número de infecções urinárias nos últimos 12 meses;
 
@@ -1718,12 +1787,12 @@ Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paci
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Infecção_Urinária_Recorrente</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InfeccaoUrinariaRecorrente</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <IRI>#LitiaseRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">- Nefrolitíase recorrente com causa metabólica identificada e com indicação de tratamento farmacológico que não pode ser realizado na APS.
 - Impossibilidade de investigar etiologia dos cálculos com exame de eletrólitos na urina de 24 horas e exames séricos.
@@ -1731,17 +1800,17 @@ Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paci
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#LitiaseRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kidney stone (disorder)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#LitiaseRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">95570007</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LitiaseRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1. Sinais e sintomas;
 
@@ -1760,72 +1829,72 @@ Deve-se indicar TRS para pacientes com TFG inferior a 10 mL/min/1,73m². Em paci
 (MINISTÉRIO DA SAÚDE, 2015)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LitiaseRenal</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LitiaseRenal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Medico</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MedicoDaAtencaoPrimaria</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MedicoDaAtencaoPrimaria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#OutrosMotivosDeEncaminhamentoMaisComuns</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Motivos mais comuns além da DRC que implicam na necessidade de encaminhar o paciente para o Nefrologista</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OutrosMotivosDeEncaminhamentoMaisComuns</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OutrosMotivosDeEncaminhamentoMaisComuns</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Paciente</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Patient (person)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Paciente</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">116154003</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Paciente</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Paciente</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Raca</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Race (observable entity)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Raca</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">103579009</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Raca</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Raca</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#RelacaoAlbuminaCreatinina</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Urine albumin/creatinine ratio measurement (procedure)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#RelacaoAlbuminaCreatinina</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">271075006</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RelacaoAlbuminaCreatinina</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">O paciente está em um estágio inicial de DRC se existir aumentos moderados da microalbuminúria.
 
@@ -1834,350 +1903,299 @@ O paciente está em estágio mais grave de DRC se possui RAC com níveis mais el
 O paciente não apresenta DRC se o RAC estiver com níveis normais.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#RelacaoAlbuminaCreatinina</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Relação Albumina/Creatinina (RAC) é a pesquisa de albuminúria em amostra isolada de urina corrigida pela creatininúria.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RelacaoAlbuminaCreatinina</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RelacaoAlbuminaCreatinina</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#RiscoModeradamenteAumentado</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate to high risk of (contextual qualifier) (qualifier value)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RiscoModeradamenteAumentado</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RiscoModeramenteAumentado</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RiscoMuitoAlto</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RiscoMuitoAlto</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#Risco_Alto</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High risk (qualifier value)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#Risco_Alto</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">723509005</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Risco_Alto</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AltoRisco</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#SCTID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Um identificador inteiro exclusivo aplicado a cada componente SNOMED CT (Conceito, Descrição ou Relacionamento). Cada SCTID inclui um identificador de item, um dígito de verificação, um identificador de partição e, dependendo do identificador de partição, também pode incluir um identificador de espaço para nome (SNOMED CT Glossary, 2017).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual"/>
         <IRI>#TFG1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG1</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
         <IRI>#TFG2</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">60-89</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG2</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
         <IRI>#TFG3A</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">45-59</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG3A</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG3A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
         <IRI>#TFG3B</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">30-44</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG3B</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG3B</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
         <IRI>#TFG4</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">15-29</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG4</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue"/>
         <IRI>#TFG5</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">15</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TFG5</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TFG5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <IRI>#TaxaDeFiltracaoGlomerular</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Glomerular filtration rate (observable entity)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <IRI>#TaxaDeFiltracaoGlomerular</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">80274001</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#TaxaDeFiltracaoGlomerular</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Teste para medir a função renal e determinar o estágio de doenças renais</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TaxaDeFiltracaoGlomerular</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TaxaDeFiltracaoGlomerular</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">O exame de urina é usado como método diagnóstico complementar. Trata-se de um exame indolor, de simples coleta e resultado rápido.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">O exame sumário da urina pode nos fornecer pistas importantes sobre doenças, principalmente sobre problemas nos rins e nas vias urinárias.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EQU/EAS/EQU/EAS/EQU_EAS_UrinaTipo1</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EQU_EAS_UrinaTipo1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label" />
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InformacaoExtra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Taxa de Filtração Glomerular (TFG)</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao" />
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio" />
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Entre" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Entre"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo" />
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula" />
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Formula"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline" />
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra" />
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorIgual" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorIgual"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorQue" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MaiorQue"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorIgual" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorIgual"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorQue" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#MenorQue"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo" />
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Vacinas" />
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Vacinas"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgEntre"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorIgual"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorQue" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMaiorQue"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorIgual" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorIgual"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue" />
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#tfgMenorQue"/>
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
     </SubAnnotationPropertyOf>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#CondicoesClinicasParaEncaminhamento"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#Conduta"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#FormaDeAvaliacao"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento" />
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/ontoneo.owl#LocalDeAcompanhamento"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="#FSN" />
+        <AnnotationProperty IRI="#FSN"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="#SCTID" />
+        <AnnotationProperty IRI="#SCTID"/>
         <AbbreviatedIRI>xsd:integer</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Classificação"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Definicao"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Dominio"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Escopo"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Guideline"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#InformacaoExtra"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#Objetivo"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG" />
+        <AnnotationProperty IRI="http://www.semanticweb.org/esaualencar/ontologies/2015/9/OntoDEEMN#TFG"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment" />
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
     <AnnotationPropertyRange>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy" />
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
     </AnnotationPropertyRange>
-
-    <Declaration>
-        <NamedIndividual URI="#genero" />
-    </Declaration>
-    <ClassAssertion>
-        <Class URI="#Genero" />
-        <NamedIndividual URI="#genero" />
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temGenero" />
-        <NamedIndividual URI="#genero" />
-        <NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Feminino" />
-    </ObjectPropertyAssertion>
-
-    <Declaration>
-        <NamedIndividual URI="#raca" />
-    </Declaration>
-    <ClassAssertion>
-        <Class URI="#Raca" />
-        <NamedIndividual URI="#raca" />
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty URI="http://purl.obolibrary.org/obo/ontoneo.owl#temRaca" />
-        <NamedIndividual URI="#raca" />
-        <NamedIndividual URI="http://purl.obolibrary.org/obo/ontoneo.owl#Preta" />
-    </ObjectPropertyAssertion>
-    <Declaration>
-        <NamedIndividual URI="#idade" />
-    </Declaration>
-    <ClassAssertion xmlns="">
-        <Class URI="#Idade" xmlns="http://www.w3.org/2002/07/owl#" />
-        <NamedIndividual URI="#idade" xmlns="http://www.w3.org/2002/07/owl#" />
-    </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="owl:topDataProperty" />
-        <NamedIndividual URI="#idade" />
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">63</Literal>
-    </DataPropertyAssertion>
-
-    <Declaration>
-        <NamedIndividual URI="#creatinina" />
-    </Declaration>
-    <ClassAssertion>
-        <Class URI="#CreatininaSerica" />
-        <NamedIndividual URI="#creatinina" />
-    </ClassAssertion>
-    <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="owl:topDataProperty" />
-        <NamedIndividual URI="#creatinina" />
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1.60</Literal>
-    </DataPropertyAssertion>
 </Ontology>
 
 
